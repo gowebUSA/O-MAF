@@ -1,0 +1,37 @@
+﻿@model IEnumerable<O_MAF.Models.LoginResponse>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Whose Login</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <div class="panel-body">
+        <h2>Here is the list of logged in users</h2>
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Pin</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (O_MAF.Models.LoginResponse listItem in Model)
+                {
+                    <tr>
+                        <td>@listItem.Username</td>
+                        <td>@listItem.Pin</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
