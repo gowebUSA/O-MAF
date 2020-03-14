@@ -1,7 +1,34 @@
-﻿
+﻿@model O_MAF.Models.InitiateResponse
+
+@{
+    Layout = null;
+}
+
 @{
     ViewData["Title"] = "Workload";
 }
 
-<h1>Workload</h1>
+<!DOCTYPE html>
 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body class="text-center">
+    <p>
+        <h1>@Model.Modex is saved.</h1>
+        @if (Model.AcftUp == true)
+        {
+            @:Aircraft @Model.Modex is flyable!
+        }
+        else
+        {
+            @:Sorry aircraft @Model.Modex is broken. Not safe to fly!
+        }
+    </p>
+    <p>Click <a class="nav-link" asp-action="InitateResponses">here</a> to see all saved wordkload.</p>
+    <br /><br />
+</body>
+</html>

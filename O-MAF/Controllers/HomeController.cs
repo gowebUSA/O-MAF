@@ -37,28 +37,16 @@ namespace O_MAF.Controllers
         //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         //}
         [HttpGet]
-        public ViewResult LoginForm()
-        {
-            return View();
-        }
         public ViewResult InitiateForm()
         {
             return View();
         }
-        [HttpPost]
-        public ViewResult LoginForm(LoginResponse loginResponse)
+        [HttpGet]
+        public ViewResult LoginForm()
         {
-            if (ModelState.IsValid)
-            {
-                LoginRepository.AddResponse(loginResponse);
-                return View("WhoseLogin", loginResponse);
-            }
-            else
-            {
-                //there is a validation error
-                return View();
-            }
+            return View();
         }
+        [HttpPost]
         public ViewResult InitiateForm(InitiateResponse initiateResponse)
         {
             if (ModelState.IsValid)
@@ -72,13 +60,27 @@ namespace O_MAF.Controllers
                 return View();
             }
         }
-        public ViewResult LoginResponse()
-        {
-            return View(LoginRepository.Responses);          //LoginRepository.Responses.Where(r => r.WillAttend == true)
-        }
         public ViewResult InitiateResponse()
         {
             return View(InitiateRepository.Responses.Where(r => r.AcftUp == true));
+        }
+        [HttpPost]
+        public ViewResult LoginForm(LoginResponse loginResponse)
+        {
+            if (ModelState.IsValid)
+            {
+                LoginRepository.AddResponse(loginResponse);
+                return View("WhoseLogin2", loginResponse);
+            }
+            else
+            {
+                //there is a validation error
+                return View();
+            }
+        }
+        public ViewResult LoginResponse()
+        {
+            return View(LoginRepository.Responses);          //LoginRepository.Responses.Where(r => r.WillAttend == true)
         }
     }
 }
