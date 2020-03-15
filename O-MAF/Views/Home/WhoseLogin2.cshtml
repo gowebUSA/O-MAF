@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Whose Login</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/styletab.css" />
 </head>
 <body class="text-center">
     <p>
@@ -28,3 +29,25 @@
     </div>
 </body>
 </html>
+
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+<div class="wrapper">
+    <div class="tabs">
+        <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+            <label for="tab-1" class="tab-label">Who's Logged In</label>
+            <div class="tab-content"><p>Click <a class="nav-link" asp-action="LoginResponses">here</a> to see who is logged in.</p> </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+            <label for="tab-2" class="tab-label">Initiate</label>
+            <div class="tab-content"><a class="btn btn-primary" asp-action="InitiateForm">Initiate MAF</a></div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+            <label for="tab-3" class="tab-label">Workload</label>
+            <div class="tab-content"><a class="btn btn-primary" asp-action="Workload">See Your Workload</a></div>
+        </div>
+    </div>
+</div>
