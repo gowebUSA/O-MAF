@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+        img {
+            width: 100%; 
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-center">
+        <b>@ViewBag.Greeting</b><br />
+        <img src="https://github.com/gowebUSA/MSSA-Project/raw/master/TSQL/Project-Step-7/O-MAF-concept.png" />
+        <h1 class="display-4">Welcome to O-MAF</h1>
+        <p>Please read disclaimer and click accept to continue.</p>
+    </div>
+    <div>Disclaimer here...</div>
+    <div>
+        <a class="btn btn-primary" asp-action="LoginForm">I Accept</a>
+    </div>
+    <div><br /><br /><br /></div>
+</body>
+</html>
