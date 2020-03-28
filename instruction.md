@@ -2,7 +2,7 @@
 
 ## Table Of Contents
 
-1. Intro
+1. Introduction
 2. Initiate MAFs<br />
 -Work Unit Code<br />
 -Action Org<br />
@@ -15,3 +15,6 @@
 -Posit<br />
 3. Order Parts
 4. 
+Appendix A - Acronym
+Appendix B - Data
+Apependix C - UNS
