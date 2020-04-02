@@ -14,6 +14,6 @@ namespace OMAF.Data
         {
         }
 
-        public DbSet<Aircraft> Movie { get; set; }
+        public DbSet<Aircraft> Aircraft { get; set; }
     }
 }

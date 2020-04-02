@@ -28,7 +28,7 @@ namespace OMAF
             services.AddControllersWithViews();
 
             services.AddDbContext<OmafContext>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("OmafContext")));
+           options.UseSqlServer(Configuration.GetConnectionString("OmafContext"))); //appsettings.json line 12.
             //docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1&tabs=visual-studio#register-the-database-context
         }
 
