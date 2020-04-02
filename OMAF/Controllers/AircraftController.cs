@@ -20,7 +20,19 @@ namespace OMAF.Controllers
         }
 
         // GET: Aircraft
-        public async Task<IActionResult> Index(string id)                 //Add Search
+        public async Task<IActionResult> Index(string searchString)                 //Add Search
+        {
+            var aircraft = from m in _context.Aircraft
+                           select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                aircraft = aircraft.Where(s => s.SysReason.Contains(searchString));
+            }
+
+            return View(await aircraft.ToListAsync());
+        }
+        public async Task<IActionResult> Index3(string id)                 //Add Search
         {
             var aircraft = from m in _context.Aircraft
                            select m;
