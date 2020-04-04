@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 
+// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
 namespace OMAF.Controllers
 {
     public class HelloOmafController : Controller
     {
         // 
-        // GET: /HelloWOmaf/
+        // GET: /HelloWorld/
         public IActionResult Index()
         {
             return View();
@@ -21,7 +23,8 @@ namespace OMAF.Controllers
         }
 
         // 
-        // GET: /HelloWOmaf/Welcome/ 
+        // GET: /HelloWorld/Welcome/ 
+        // Requires using System.Text.Encodings.Web;
         public IActionResult Welcome(string name, int numTimes = 1)
         {
             ViewData["Message"] = "Hello " + name;
@@ -33,9 +36,7 @@ namespace OMAF.Controllers
         {
             return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
         }
-        public string Welcome2(string name, int numTimes = 1)            //?name=Rick&numtimes=4
-            //The ? (question mark) in the above URL is a separator, and the query string follows. 
-            //The & character separates field-value pairs.
+        public string Welcome2(string name, int numTimes = 1)
         {
             return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
         }

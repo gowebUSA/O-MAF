@@ -8,8 +8,6 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using OMAF.Data;
-using Microsoft.EntityFrameworkCore;
 
 namespace OMAF
 {
@@ -26,10 +24,6 @@ namespace OMAF
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
-            services.AddDbContext<OmafContext>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("OmafContext"))); //appsettings.json line 12.
-            //docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1&tabs=visual-studio#register-the-database-context
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +50,7 @@ namespace OMAF
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}"); //{id?} (using the ? makes the parameter is optional)
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
