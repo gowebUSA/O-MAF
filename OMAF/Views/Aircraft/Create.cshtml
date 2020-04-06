@@ -6,14 +6,14 @@
 
 <h1>Create</h1>
 
-<h4>Aircraft</h4>
+<h4>Discrepancy</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Buno" class="control-label"></label>
+                <label asp-for="Buno" class="control-label"></label> (6 digits only)
                 <input asp-for="Buno" class="form-control" />
                 <span asp-validation-for="Buno" class="text-danger"></span>
             </div>
@@ -23,24 +23,24 @@
                 <span asp-validation-for="SysReason" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ReleaseDate" class="control-label"></label>
+                <label asp-for="ReleaseDate" class="control-label"></label> (Use calendar, then hh:mm AM/PM for time)
                 <input asp-for="ReleaseDate" class="form-control" />
                 <span asp-validation-for="ReleaseDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UDP" class="control-label"></label>
+                <label asp-for="UDP" class="control-label"></label> (U=1, D=2, P=3, use numbers only)
                 <input asp-for="UDP" class="form-control" />
                 <span asp-validation-for="UDP" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Initiate" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to Workload</a>
 </div>
 
 @section Scripts {
