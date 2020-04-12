@@ -27,7 +27,7 @@ namespace OMAF
         {
             services.AddControllersWithViews();
             services.AddDbContext<OmafContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("OmafContext")));
+                options.UseSqlServer(Configuration.GetConnectionString("OmafContext2")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
