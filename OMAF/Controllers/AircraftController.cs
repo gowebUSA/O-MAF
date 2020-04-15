@@ -20,7 +20,47 @@ namespace OMAF.Controllers
         }
 
         // GET: Aircraft
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string aircraftBuno, string searchString)
+        {
+            // Use LINQ to get list of genres.                              //Changed m to a.
+            IQueryable<string> bunoQuery = from a in _context.Aircraft
+                                            orderby a.Buno
+                                            select a.Buno;
+
+            var aircraft = from a in _context.Aircraft
+                         select a;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                aircraft = aircraft.Where(s => s.SysReason.Contains(searchString));         //Keot s for searchString
+            }
+
+            if (!string.IsNullOrEmpty(aircraftBuno))
+            {
+                aircraft = aircraft.Where(b => b.Buno == aircraftBuno);         //Changed x to b.
+            }
+
+            var aircraftBunoVM = new AircraftBunoViewModel
+            {
+                Buno = new SelectList(await bunoQuery.Distinct().ToListAsync()),
+                Aircraft = await aircraft.ToListAsync()
+            };
+
+            return View(aircraftBunoVM);
+        }
+        public async Task<IActionResult> Index2(string searchString)
+        {
+            var aircraft = from a in _context.Aircraft
+                         select a;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                aircraft = aircraft.Where(s => s.SysReason.Contains(searchString)); //Contains runs on the database and not on C#.
+            }
+
+            return View(await aircraft.ToListAsync());
+        }
+        public async Task<IActionResult> Index1()
         {
             return View(await _context.Aircraft.ToListAsync());
         }
@@ -54,7 +94,7 @@ namespace OMAF.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Buno,SysReason,ReleaseDate,UDP")] Aircraft aircraft)
+        public async Task<IActionResult> Create([Bind("Id,Buno,SysReason,ReleaseDate,UDP,JobStat")] Aircraft aircraft)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +126,7 @@ namespace OMAF.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Buno,SysReason,ReleaseDate,UDP")] Aircraft aircraft)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Buno,SysReason,ReleaseDate,UDP,JobStat")] Aircraft aircraft)
         {
             if (id != aircraft.Id)
             {

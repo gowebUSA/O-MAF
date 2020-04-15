@@ -1,4 +1,4 @@
-﻿@model IEnumerable<OMAF.Models.Aircraft>
+﻿@model OMAF.Models.AircraftBunoViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -9,38 +9,54 @@
 <p>
     <a asp-action="Create">Initiate New MAF</a>
 </p>
+<form asp-controller="Aircraft" asp-action="Index" method="get">
+    <p>
+        <select asp-for="AircraftBuno" asp-items="Model.Buno">
+            <option value="">All</option>
+        </select>
+
+        Title: <input type="text" asp-for="SearchString">
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Buno)
+                @Html.DisplayNameFor(model => model.Aircraft[0].Buno)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SysReason)
+                @Html.DisplayNameFor(model => model.Aircraft[0].SysReason)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ReleaseDate)
+                @Html.DisplayNameFor(model => model.Aircraft[0].JobStat)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UDP)
+                @Html.DisplayNameFor(model => model.Aircraft[0].UDP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aircraft[0].ReleaseDate)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Aircraft) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Buno)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SysReason)
-            </td>
+            </td>            
             <td>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
+                @Html.DisplayFor(modelItem => item.JobStat)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.UDP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

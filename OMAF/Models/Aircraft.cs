@@ -19,5 +19,6 @@ namespace OMAF.Models
         //[DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
         public int UDP { get; set; }        //Price
+        public string JobStat { get; set; } //Rating
     }
 }

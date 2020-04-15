@@ -23,14 +23,19 @@
                 <span asp-validation-for="SysReason" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ReleaseDate" class="control-label"></label> (Use calendar, then hh:mm AM/PM for time)
-                <input asp-for="ReleaseDate" class="form-control" />
-                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+                <label asp-for="JobStat" class="control-label"></label> (M3, IW, WP, CT, JC, MC, CY)
+                <input asp-for="JobStat" class="form-control" />
+                <span asp-validation-for="JobStat" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="UDP" class="control-label"></label> (U=1, D=2, P=3, use numbers only)
                 <input asp-for="UDP" class="form-control" />
                 <span asp-validation-for="UDP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseDate" class="control-label"></label> (Use calendar, then hh:mm AM/PM for time)
+                <input asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Initiate" class="btn btn-primary" />
