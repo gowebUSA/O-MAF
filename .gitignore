@@ -11,7 +11,7 @@
 *.sln.docstates
 
 # ignore appsettings configuration files
-**OMAF/**/appsettings.json
+OMAF/**/appsettings.json
 **/appsettings.development.json
 **/appsettings.staging.json
 **/appsettings.production.json
