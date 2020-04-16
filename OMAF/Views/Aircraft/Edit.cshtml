@@ -29,14 +29,59 @@
                 <span asp-validation-for="JobStat" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="InitiateDate" class="control-label"></label> (Use calendar, then hh:mm AM/PM for time)
+                <input asp-for="InitiateDate" class="form-control" />
+                <span asp-validation-for="InitiateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="UDP" class="control-label"></label> (U=1, D=2, P=3, use numbers only)
                 <input asp-for="UDP" class="form-control" />
                 <span asp-validation-for="UDP" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ReleaseDate" class="control-label"></label> (Use calendar, then hh:mm AM/PM for time)
-                <input asp-for="ReleaseDate" class="form-control" />
-                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+                <label asp-for="Initiator" class="control-label"></label> (Username)
+                <input asp-for="Initiator" class="form-control" />
+                <span asp-validation-for="Initiator" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Discrepancy" class="control-label"></label> (Plain Text Only)
+                <input asp-for="Discrepancy" class="form-control" />
+                <span asp-validation-for="Discrepancy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IwDate" class="control-label"></label> (Use calendar, then hh:mm AM/PM for time)
+                <input asp-for="IwDate" class="form-control" />
+                <span asp-validation-for="IwDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Worker" class="control-label"></label> (Username)
+                <input asp-for="Worker" class="form-control" />
+                <span asp-validation-for="Worker" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CorrAction" class="control-label"></label> (Plain Text Only)
+                <input asp-for="CorrAction" class="form-control" />
+                <span asp-validation-for="CorrAction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inspector" class="control-label"></label> (Username)
+                <input asp-for="Inspector" class="form-control" />
+                <span asp-validation-for="Inspector" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComplDate" class="control-label"></label> (Use calendar, then hh:mm AM/PM for time)
+                <input asp-for="ComplDate" class="form-control" />
+                <span asp-validation-for="ComplDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MxCtrl" class="control-label"></label> (Username)
+                <input asp-for="MxCtrl" class="form-control" />
+                <span asp-validation-for="MxCtrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MxCtrlNotes" class="control-label"></label> (Plain Text Only)
+                <input asp-for="MxCtrlNotes" class="form-control" />
+                <span asp-validation-for="MxCtrlNotes" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
@@ -46,7 +91,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to Workload</a>
 </div>
 
 @section Scripts {

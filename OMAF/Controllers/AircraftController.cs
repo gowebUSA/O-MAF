@@ -32,7 +32,7 @@ namespace OMAF.Controllers
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                aircraft = aircraft.Where(s => s.SysReason.Contains(searchString));         //Keot s for searchString
+                aircraft = aircraft.Where(s => s.SysReason.Contains(searchString));         //Kept s for searchString
             }
 
             if (!string.IsNullOrEmpty(aircraftBuno))
@@ -94,7 +94,7 @@ namespace OMAF.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Buno,SysReason,ReleaseDate,UDP,JobStat")] Aircraft aircraft)
+        public async Task<IActionResult> Create([Bind("Id, Buno, SysReason, JobStat, InitiateDate, UDP, Initiator, Discrepancy, IwDate, Worker, CorrAction, Inspector, ComplDate, MxCtrl, MxCtrlNotes")] Aircraft aircraft)
         {
             if (ModelState.IsValid)
             {
@@ -126,7 +126,7 @@ namespace OMAF.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Buno,SysReason,ReleaseDate,UDP,JobStat")] Aircraft aircraft)
+        public async Task<IActionResult> Edit(int id, [Bind("Id, Buno, SysReason, JobStat, InitiateDate, UDP, Initiator, Discrepancy, IwDate, Worker, CorrAction, Inspector, ComplDate, MxCtrl, MxCtrlNotes")] Aircraft aircraft)
         {
             if (id != aircraft.Id)
             {

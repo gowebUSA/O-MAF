@@ -15,7 +15,7 @@
             <option value="">All</option>
         </select>
 
-        Title: <input type="text" asp-for="SearchString">
+        System Reason: <input type="text" asp-for="SearchString">
         <input type="submit" value="Filter" />
     </p>
 </form>
@@ -32,10 +32,13 @@
                 @Html.DisplayNameFor(model => model.Aircraft[0].JobStat)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Aircraft[0].InitiateDate)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Aircraft[0].UDP)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Aircraft[0].ReleaseDate)
+                @Html.DisplayNameFor(model => model.Aircraft[0].Initiator)
             </th>
             <th></th>
         </tr>
@@ -48,15 +51,18 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SysReason)
-            </td>            
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.JobStat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InitiateDate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.UDP)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
+                @Html.DisplayFor(modelItem => item.Initiator)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
