@@ -11,12 +11,10 @@
 *.sln.docstates
 
 # ignore appsettings configuration files
-**/appsettings.json
+**/OMAF/appsettings.json
 **/appsettings.development.json
 **/appsettings.staging.json
 **/appsettings.production.json
-
-*/appsettings.*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
