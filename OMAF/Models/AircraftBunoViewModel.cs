@@ -12,5 +12,6 @@ namespace OMAF.Models
         public SelectList Buno { get; set; }
         public string AircraftBuno { get; set; }
         public string SearchString { get; set; }
+        public string SearchJobStat { get; set; }
     }
 }
