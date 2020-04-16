@@ -11,16 +11,15 @@
 </p>
 <form asp-controller="Aircraft" asp-action="Index" method="get">
     <p>
-        <select asp-for="AircraftBuno" asp-items="Model.Buno" onchange="this.form.submit()"> 
+        <select asp-for="AircraftBuno" asp-items="Model.Buno" onchange="this.form.submit()">
             <option value="">All</option>
-
         </select>
 
         System Reason: <input type="text" asp-for="SearchString">
         <input type="submit" value="Filter" />
 
         Job Status: <input type="text" asp-for="SearchJobStat">
-        <input type="submit" value="Filter" />
+        <input type="submit" value="Filter" /> (M3, IW, WP, CT, JC, MC, and CY for contingency only)
     </p>
 </form>
 <table class="table">
