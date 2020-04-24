@@ -14,6 +14,11 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
+                <label asp-for="MCN" class="control-label"></label> (Org cd + JDate + Sequence)
+                <input asp-for="MCN" class="form-control" />
+                <span asp-validation-for="MCN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Buno" class="control-label"></label> (6 digits only)
                 <input asp-for="Buno" class="form-control" />
                 <span asp-validation-for="Buno" class="text-danger"></span>

@@ -10,6 +10,7 @@ namespace OMAF.Models
     public class Aircraft                       //This might be the table name for the database.
     {
         public int Id { get; set; }
+        public string MCN { get; set; }
         public string Buno { get; set; }    //Genre
         //
         [Display(Name = "System Reason")]

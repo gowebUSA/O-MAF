@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Workload</h1>
+<h1>SeaElk Workload</h1>
 
 <p>
     <a asp-action="Create">Initiate New MAF</a>
@@ -25,6 +25,9 @@
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Aircraft[0].MCN)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Aircraft[0].Buno)
             </th>
@@ -49,6 +52,9 @@
     <tbody>
 @foreach (var item in Model.Aircraft) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MCN)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Buno)
             </td>

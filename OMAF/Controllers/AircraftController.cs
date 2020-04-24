@@ -126,7 +126,7 @@ namespace OMAF.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id, Buno, SysReason, JobStat, InitiateDate, UDP, Initiator, Discrepancy, IwDate, Worker, CorrAction, Inspector, ComplDate, MxCtrl, MxCtrlNotes")] Aircraft aircraft)
+        public async Task<IActionResult> Create([Bind("Id, MCN, Buno, SysReason, JobStat, InitiateDate, UDP, Initiator, Discrepancy, IwDate, Worker, CorrAction, Inspector, ComplDate, MxCtrl, MxCtrlNotes")] Aircraft aircraft)
         {
             if (ModelState.IsValid)
             {
@@ -158,7 +158,7 @@ namespace OMAF.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id, Buno, SysReason, JobStat, InitiateDate, UDP, Initiator, Discrepancy, IwDate, Worker, CorrAction, Inspector, ComplDate, MxCtrl, MxCtrlNotes")] Aircraft aircraft)
+        public async Task<IActionResult> Edit(int id, [Bind("Id, MCN, Buno, SysReason, JobStat, InitiateDate, UDP, Initiator, Discrepancy, IwDate, Worker, CorrAction, Inspector, ComplDate, MxCtrl, MxCtrlNotes")] Aircraft aircraft)
         {
             if (id != aircraft.Id)
             {
