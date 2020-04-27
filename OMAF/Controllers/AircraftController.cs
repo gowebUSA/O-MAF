@@ -136,7 +136,6 @@ namespace OMAF.Controllers
             }
             return View(aircraft);
         }
-
         // GET: Aircraft/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -221,5 +220,11 @@ namespace OMAF.Controllers
         {
             return _context.Aircraft.Any(e => e.Id == id);
         }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //
+        //{
+        //    modelBuilder.Entity<Aircraft>()
+        //        .HasKey(k => new { k.MCN });
+        //}
     }
 }
