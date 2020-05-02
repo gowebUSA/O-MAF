@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using OMAF.Models;
 
 namespace OMAF.Controllers
 {
+    //[Authorize]
     public class AircraftController : Controller
     {
         private readonly OmafContext _context;
@@ -20,6 +22,7 @@ namespace OMAF.Controllers
         }
 
         // GET: Aircraft
+        [AllowAnonymous]
         public async Task<IActionResult> Index(string aircraftBuno, string searchString, string SearchJobStat)
         {
             // Use LINQ to get list of genres.                              //Changed m to a.
@@ -52,52 +55,10 @@ namespace OMAF.Controllers
 
             return View(aircraftBunoVM);
         }
-        public async Task<IActionResult> Index3(string aircraftBuno, string searchString)
-        {
-            // Use LINQ to get list of genres.                              //Changed m to a.
-            IQueryable<string> bunoQuery = from a in _context.Aircraft
-                                            orderby a.Buno
-                                            select a.Buno;
-
-            var aircraft = from a in _context.Aircraft
-                         select a;
-
-            if (!string.IsNullOrEmpty(searchString))
-            {
-                aircraft = aircraft.Where(s => s.SysReason.Contains(searchString));         //Kept s for searchString
-            }
-
-            if (!string.IsNullOrEmpty(aircraftBuno))
-            {
-                aircraft = aircraft.Where(b => b.Buno == aircraftBuno);         //Changed x to b.
-            }
-
-            var aircraftBunoVM = new AircraftBunoViewModel
-            {
-                Buno = new SelectList(await bunoQuery.Distinct().ToListAsync()),
-                Aircraft = await aircraft.ToListAsync()
-            };
-
-            return View(aircraftBunoVM);
-        }
-        public async Task<IActionResult> Index2(string searchString)
-        {
-            var aircraft = from a in _context.Aircraft
-                         select a;
-
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                aircraft = aircraft.Where(s => s.SysReason.Contains(searchString)); //Contains runs on the database and not on C#.
-            }
-
-            return View(await aircraft.ToListAsync());
-        }
-        public async Task<IActionResult> Index1()
-        {
-            return View(await _context.Aircraft.ToListAsync());
-        }
+        
 
         // GET: Aircraft/Details/5
+        [HttpGet]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -116,6 +77,8 @@ namespace OMAF.Controllers
         }
 
         // GET: Aircraft/Create
+        [HttpGet]
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View();
@@ -125,7 +88,8 @@ namespace OMAF.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public async Task<IActionResult> Create([Bind("Id, MCN, Buno, SysReason, JobStat, InitiateDate, UDP, Initiator, Discrepancy, IwDate, Worker, CorrAction, Inspector, ComplDate, MxCtrl, MxCtrlNotes")] Aircraft aircraft)
         {
             if (ModelState.IsValid)
@@ -137,7 +101,8 @@ namespace OMAF.Controllers
             return View(aircraft);
         }
         // GET: Aircraft/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)     //Task<IActionResult>
         {
             if (id == null)
             {
@@ -156,7 +121,7 @@ namespace OMAF.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id, MCN, Buno, SysReason, JobStat, InitiateDate, UDP, Initiator, Discrepancy, IwDate, Worker, CorrAction, Inspector, ComplDate, MxCtrl, MxCtrlNotes")] Aircraft aircraft)
         {
             if (id != aircraft.Id)
@@ -188,6 +153,7 @@ namespace OMAF.Controllers
         }
 
         // GET: Aircraft/Delete/5
+        [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -207,7 +173,7 @@ namespace OMAF.Controllers
 
         // POST: Aircraft/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var aircraft = await _context.Aircraft.FindAsync(id);

@@ -29,7 +29,6 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
-          "OmafLogin": "1.0.0",
           "xunit.core": "2.4.1",
           "xunit.extensibility.core": "2.4.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -2409,70 +2408,6 @@
         },
         "compile": {
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
-        }
-      },
-      "OmafLogin/1.0.0": {
-        "runtime": {
-          "OmafLogin.dll": {}
-        },
-        "compile": {
-          "OmafLogin.dll": {}
-        }
-      },
-      "EntityFramework/6.0.0.0": {
-        "runtime": {
-          "EntityFramework.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.2.61023.0"
-          }
-        }
-      },
-      "System.Web.Mvc/5.2.7.0": {
-        "runtime": {
-          "System.Web.Mvc.dll": {
-            "assemblyVersion": "5.2.7.0",
-            "fileVersion": "5.2.61128.0"
-          }
-        }
-      },
-      "System.Web.WebPages/3.0.0.0": {
-        "runtime": {
-          "System.Web.WebPages.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          }
-        }
-      },
-      "System.Web.WebPages.Razor/3.0.0.0": {
-        "runtime": {
-          "System.Web.WebPages.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          }
-        }
-      },
-      "System.Web.Razor/3.0.0.0": {
-        "runtime": {
-          "System.Web.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          }
-        }
-      },
-      "Microsoft.Web.Infrastructure/1.0.0.0": {
-        "runtime": {
-          "Microsoft.Web.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.20105.407"
-          }
-        }
-      },
-      "System.Web.WebPages.Deployment/3.0.0.0": {
-        "runtime": {
-          "System.Web.WebPages.Deployment.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61128.0"
-          }
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5288,46 +5223,6 @@
       "sha512": "sha512-7e/1jqBpcb7frLkB6XDrHCGXAbKN4Rtdb88epYxCSRQuZDRW8UtTfdTEVpdTl8s4T56e07hOBVd4G0OdCxIY2A==",
       "path": "xunit.extensibility.execution/2.4.1",
       "hashPath": "xunit.extensibility.execution.2.4.1.nupkg.sha512"
-    },
-    "OmafLogin/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "EntityFramework/6.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.Mvc/5.2.7.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.WebPages/3.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.WebPages.Razor/3.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.Razor/3.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Web.Infrastructure/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Web.WebPages.Deployment/3.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",
