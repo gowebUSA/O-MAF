@@ -4,105 +4,2753 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<html>
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+    <meta name=ProgId content=Excel.Sheet>
+    <meta name=Generator content="Microsoft Excel 15">
+    <!--<link id=Main-File rel=Main-File href="../Index.cshtml">-->
+    <!--<link rel=File-List href=filelist.xml>-->
+    <link href="~/css/stylesheet.css" rel="stylesheet" />
+    <style>
+        <!-- table {
+            mso-displayed-decimal-separator: "\.";
+            mso-displayed-thousand-separator: "\,";
+        }
 
-<div>
-    <h4>Aircraft</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MCN)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MCN)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Buno)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Buno)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.SysReason)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.SysReason)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.JobStat)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.JobStat)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.InitiateDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.InitiateDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.UDP)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.UDP)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Initiator)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Initiator)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Discrepancy)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Discrepancy)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.IwDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.IwDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Worker)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Worker)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CorrAction)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CorrAction)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Inspector)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Inspector)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.ComplDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.ComplDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MxCtrl)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MxCtrl)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MxCtrlNotes)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MxCtrlNotes)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to Workload</a>
-</div>
+        {
+            margin: .59in .25in .64in .25in;
+            mso-header-margin: .1in;
+            mso-footer-margin: .6in;
+        }
+        -->
+    </style>
+    <![if !supportTabStrip]>
+    <!--<script language="JavaScript">
+    <!--
+    function fnUpdateTabs()
+     {
+      if (parent.window.g_iIEVer>=4) {
+       if (parent.document.readyState=="complete"
+        && parent.frames['frTabs'].document.readyState=="complete")
+       parent.fnSetActiveSheet(0);
+      else
+       window.setTimeout("fnUpdateTabs();",150);
+     }
+    }
+
+    if (window.name!="frSheet")
+     window.location.replace("../Index.cshtml");
+    else
+     fnUpdateTabs();
+    //
+    </script>-->
+    <![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72" class=xl67>
+
+
+
+    <h1>Details</h1>
+
+    <div>
+        <h4>Aircraft</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.MCN)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.MCN)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Buno)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Buno)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.SysReason)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.SysReason)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.JobStat)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.JobStat)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.InitiateDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.InitiateDate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.UDP)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.UDP)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Initiator)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Initiator)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Discrepancy)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Discrepancy)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.IwDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IwDate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Worker)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Worker)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CorrAction)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CorrAction)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Inspector)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Inspector)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ComplDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ComplDate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.MxCtrl)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.MxCtrl)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.MxCtrlNotes)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.MxCtrlNotes)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+
+
+
+
+
+
+    <table border=0 cellpadding=0 cellspacing=0 width=761 style='border-collapse:
+ collapse;table-layout:fixed;width:577pt'>
+        <col class=xl67 width=6 style='mso-width-source:userset;mso-width-alt:219;
+ width:5pt'>
+        <col class=xl67 width=31 style='mso-width-source:userset;mso-width-alt:1133;
+ width:23pt'>
+        <col class=xl67 width=5 style='mso-width-source:userset;mso-width-alt:182;
+ width:4pt'>
+        <col class=xl67 width=15 style='mso-width-source:userset;mso-width-alt:548;
+ width:11pt'>
+        <col class=xl67 width=5 span=2 style='mso-width-source:userset;mso-width-alt:
+ 182;width:4pt'>
+        <col class=xl67 width=20 style='mso-width-source:userset;mso-width-alt:731;
+ width:15pt'>
+        <col class=xl67 width=5 style='mso-width-source:userset;mso-width-alt:182;
+ width:4pt'>
+        <col class=xl67 width=25 style='mso-width-source:userset;mso-width-alt:914;
+ width:19pt'>
+        <col class=xl67 width=10 style='mso-width-source:userset;mso-width-alt:365;
+ width:8pt'>
+        <col class=xl67 width=30 style='mso-width-source:userset;mso-width-alt:1097;
+ width:23pt'>
+        <col class=xl67 width=9 style='mso-width-source:userset;mso-width-alt:329;
+ width:7pt'>
+        <col class=xl67 width=16 span=2 style='mso-width-source:userset;mso-width-alt:
+ 585;width:12pt'>
+        <col class=xl67 width=30 style='mso-width-source:userset;mso-width-alt:1097;
+ width:23pt'>
+        <col class=xl67 width=13 style='mso-width-source:userset;mso-width-alt:475;
+ width:10pt'>
+        <col class=xl67 width=24 style='mso-width-source:userset;mso-width-alt:877;
+ width:18pt'>
+        <col class=xl67 width=29 style='mso-width-source:userset;mso-width-alt:1060;
+ width:22pt'>
+        <col class=xl67 width=10 style='mso-width-source:userset;mso-width-alt:365;
+ width:8pt'>
+        <col class=xl67 width=19 style='mso-width-source:userset;mso-width-alt:694;
+ width:14pt'>
+        <col class=xl67 width=18 style='mso-width-source:userset;mso-width-alt:658;
+ width:14pt'>
+        <col class=xl67 width=19 style='mso-width-source:userset;mso-width-alt:694;
+ width:14pt'>
+        <col class=xl67 width=7 style='mso-width-source:userset;mso-width-alt:256;
+ width:5pt'>
+        <col class=xl67 width=32 style='mso-width-source:userset;mso-width-alt:1170;
+ width:24pt'>
+        <col class=xl67 width=8 style='mso-width-source:userset;mso-width-alt:292;
+ width:6pt'>
+        <col class=xl67 width=18 style='mso-width-source:userset;mso-width-alt:658;
+ width:14pt'>
+        <col class=xl67 width=24 style='mso-width-source:userset;mso-width-alt:877;
+ width:18pt'>
+        <col class=xl67 width=20 style='mso-width-source:userset;mso-width-alt:731;
+ width:15pt'>
+        <col class=xl67 width=25 style='mso-width-source:userset;mso-width-alt:914;
+ width:19pt'>
+        <col class=xl67 width=11 style='mso-width-source:userset;mso-width-alt:402;
+ width:8pt'>
+        <col class=xl67 width=14 style='mso-width-source:userset;mso-width-alt:512;
+ width:11pt'>
+        <col class=xl67 width=9 style='mso-width-source:userset;mso-width-alt:329;
+ width:7pt'>
+        <col class=xl67 width=10 style='mso-width-source:userset;mso-width-alt:365;
+ width:8pt'>
+        <col class=xl67 width=14 style='mso-width-source:userset;mso-width-alt:512;
+ width:11pt'>
+        <col class=xl67 width=15 style='mso-width-source:userset;mso-width-alt:548;
+ width:11pt'>
+        <col class=xl67 width=6 style='mso-width-source:userset;mso-width-alt:219;
+ width:5pt'>
+        <col class=xl67 width=15 style='mso-width-source:userset;mso-width-alt:548;
+ width:11pt'>
+        <col class=xl67 width=5 style='mso-width-source:userset;mso-width-alt:182;
+ width:4pt'>
+        <col class=xl67 width=15 style='mso-width-source:userset;mso-width-alt:548;
+ width:11pt'>
+        <col class=xl67 width=23 style='mso-width-source:userset;mso-width-alt:841;
+ width:17pt'>
+        <col class=xl67 width=35 style='mso-width-source:userset;mso-width-alt:1280;
+ width:26pt'>
+        <col class=xl67 width=18 style='mso-width-source:userset;mso-width-alt:658;
+ width:14pt'>
+        <col class=xl67 width=12 style='mso-width-source:userset;mso-width-alt:438;
+ width:9pt'>
+        <col class=xl67 width=18 style='mso-width-source:userset;mso-width-alt:658;
+ width:14pt'>
+        <col class=xl67 width=12 style='mso-width-source:userset;mso-width-alt:438;
+ width:9pt'>
+        <col class=xl67 width=13 style='mso-width-source:userset;mso-width-alt:475;
+ width:10pt'>
+        <col class=xl67 width=15 style='mso-width-source:userset;mso-width-alt:548;
+ width:11pt'>
+        <col class=xl67 width=7 style='mso-width-source:userset;mso-width-alt:256;
+ width:5pt'>
+        <col class=xl67 width=110 style='mso-width-source:userset;mso-width-alt:4022;
+ width:83pt'>
+        <col class=xl67 width=19 span=20 style='mso-width-source:userset;mso-width-alt:
+ 694;width:14pt'>
+        <tr height=10 style='height:9.75pt'>
+            <td height=10 class=xl66 width=6 style='height:9.75pt;width:5pt'>
+                <a name="Print_Area">&nbsp;</a>
+            </td>
+            <td class=xl67 colspan=8 width=111 style='mso-ignore:colspan;width:84pt'>O-MAF</td>
+            <td class=xl67 width=10 style='width:8pt'>&nbsp;</td>
+            <td class=xl67 width=30 style='width:23pt'>&nbsp;</td>
+            <td class=xl67 width=9 style='width:7pt'>&nbsp;</td>
+            <td class=xl67 width=16 style='width:12pt'>&nbsp;</td>
+            <td class=xl67 width=16 style='width:12pt'>&nbsp;</td>
+            <td class=xl67 width=30 style='width:23pt'>&nbsp;</td>
+            <td class=xl67 width=13 style='width:10pt'>&nbsp;</td>
+            <td class=xl67 width=24 style='width:18pt'>&nbsp;</td>
+            <td class=xl67 width=29 style='width:22pt'>&nbsp;</td>
+            <td class=xl67 width=10 style='width:8pt'>&nbsp;</td>
+            <td class=xl67 width=19 style='width:14pt'>&nbsp;</td>
+            <td class=xl67 width=18 style='width:14pt'>&nbsp;</td>
+            <td class=xl67 width=19 style='width:14pt'>&nbsp;</td>
+            <td class=xl67 width=7 style='width:5pt'>&nbsp;</td>
+            <td class=xl67 width=32 style='width:24pt'>&nbsp;</td>
+            <td class=xl67 width=8 style='width:6pt'>&nbsp;</td>
+            <td class=xl67 width=18 style='width:14pt'>&nbsp;</td>
+            <td class=xl67 width=24 style='width:18pt'>&nbsp;</td>
+            <td class=xl67 width=20 style='width:15pt'>&nbsp;</td>
+            <td colspan=19 class=xl68 width=285 style='width:216pt'>
+                ENTRIES REQUIRED
+                SIGNATURE
+            </td>
+            <td class=xl69 width=7 style='width:5pt'>&nbsp;</td>
+        </tr>
+        <tr height=5 style='mso-height-source:userset;height:4.5pt'>
+            <td height=5 class=xl66 style='height:4.5pt'>&nbsp;</td>
+            <td class=xl70 colspan=30 style='mso-ignore:colspan'>
+                WORK CENTER REGISTER,
+                CONTROL AND PROCESSING COPY
+            </td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl71>&nbsp;</td>
+            <td rowspan=2 class=xl72 style='border-bottom:.5pt solid black'>NONE</td>
+            <td class=xl73>&nbsp;</td>
+            <td rowspan=2 class=xl72 style='border-bottom:.5pt solid black'>LOGS</td>
+            <td class=xl73>&nbsp;</td>
+            <td rowspan=2 class=xl72 style='border-bottom:.5pt solid black'>REC.</td>
+            <td class=xl73>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=4 style='mso-height-source:userset;height:3.5pt'>
+            <td height=4 class=xl66 style='height:3.5pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl73>&nbsp;</td>
+            <td class=xl73>&nbsp;</td>
+            <td class=xl73>&nbsp;</td>
+            <td class=xl73>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=7 style='mso-height-source:userset;height:6.5pt'>
+            <td height=7 class=xl66 style='height:6.5pt'>&nbsp;</td>
+            <td colspan=7 rowspan=2 class=xl75 style='border-bottom:.5pt solid black'>VIDS/MAF</td>
+            <td class=xl76 colspan=18 style='mso-ignore:colspan'>
+                <span style='mso-spacerun:yes'>                </span>OPNAV 4790/60 (REV. 5-88) SN
+                0107-FL-002-5900
+            </td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl77 style='border-top:none'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl77 style='border-top:none'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl77 style='border-top:none'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=5 style='mso-height-source:userset;height:4.5pt'>
+            <td height=5 class=xl66 style='height:4.5pt'>&nbsp;</td>
+            <td colspan=39 class=xl79>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=3 style='mso-height-source:userset;height:2.5pt'>
+            <td height=3 class=xl66 style='height:2.5pt'>&nbsp;</td>
+            <td colspan=3 class=xl80>LOCAL USE</td>
+            <td class=xl81 style='border-top:none'>&nbsp;</td>
+            <td colspan=11 rowspan=2 class=xl82 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black'>
+                &nbsp;
+            </td>
+            <td colspan=17 class=xl84 style='border-left:none'>ACCUMULATED WORK HOURS</td>
+            <td colspan=14 class=xl84>ACCUMULATED AWM HOURS</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=3 style='mso-height-source:userset;height:2.75pt'>
+            <td height=3 class=xl66 style='height:2.75pt'>&nbsp;</td>
+            <td colspan=3 class=xl86>&nbsp;</td>
+            <td class=xl87>&nbsp;20</td>
+            <td colspan=3 class=xl90 style='border-left:none'>NAME / SHIFT</td>
+            <td colspan=3 class=xl74>TOOL BOX</td>
+            <td colspan=3 class=xl74>DATE</td>
+            <td colspan=3 class=xl74>MAN HOURS</td>
+            <td colspan=5 class=xl74>ELAPSED M/T</td>
+            <td colspan=5 class=xl90>DATE</td>
+            <td colspan=3 class=xl74>TIME</td>
+            <td colspan=2 class=xl74>REASON</td>
+            <td colspan=4 class=xl74>HOURS</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:5.25pt'>
+            <td height=6 class=xl66 style='height:5.25pt'>&nbsp;</td>
+            <td colspan=15 class=xl91 style='border-right:.5pt solid black'>&nbsp;1</td>
+            <td colspan=17 rowspan=8 class=xl93 width=297 style='border-right:2.0pt double black;
+  border-bottom:.5pt solid black;width:225pt;font-size:7.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;IW @Html.DisplayFor(model => model.Worker)
+                <br />IW @Html.DisplayFor(model => model.IwDate)
+                <br />JC @Html.DisplayFor(model => model.Inspector)
+                <br />JC @Html.DisplayFor(model => model.ComplDate)
+            </td>
+            <td colspan=5 class=xl96 style='border-left:.5pt solid black'>&nbsp;2</td>
+            <td colspan=3 class=xl97 style='border-left:none'>&nbsp;3</td>
+            <td colspan=2 class=xl98 style='border-left:none'>&nbsp;4</td>
+            <td colspan=3 class=xl99 style='border-right:.5pt dashed black;border-left:
+  none'>
+                &nbsp;5
+            </td>
+            <td class=xl102 style='border-top:none;border-left:none'>6&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=12 style='mso-height-source:userset;height:11.25pt'>
+            <td height=12 class=xl66 style='height:11.25pt'>&nbsp;</td>
+            <td colspan=15 class=xl91 style='border-right:.5pt solid black'>&nbsp;9</td>
+            <td colspan=5 class=xl96 style='border-left:.5pt solid black'>&nbsp;10</td>
+            <td colspan=3 class=xl97 style='border-left:none'>&nbsp;11</td>
+            <td colspan=2 class=xl98 style='border-left:none'>&nbsp;12</td>
+            <td colspan=3 class=xl99 style='border-right:.5pt dashed black;border-left:
+  none'>
+                &nbsp;13
+            </td>
+            <td class=xl102 style='border-top:none;border-left:none'>14&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=12 style='mso-height-source:userset;height:11.25pt'>
+            <td height=12 class=xl66 style='height:11.25pt'>&nbsp;</td>
+            <td colspan=15 class=xl91 style='border-right:.5pt solid black'>&nbsp;8</td>
+            <td colspan=5 class=xl96 style='border-left:.5pt solid black'>&nbsp;15</td>
+            <td colspan=3 class=xl97 style='border-left:none'>&nbsp;7</td>
+            <td colspan=2 class=xl98 style='border-left:none'>&nbsp;16</td>
+            <td colspan=3 class=xl99 style='border-right:.5pt dashed black;border-left:
+  none'>
+                &nbsp;17
+            </td>
+            <td class=xl102 style='border-top:none;border-left:none'>18&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:5.25pt'>
+            <td height=6 class=xl66 style='height:5.25pt'>&nbsp;19</td>
+            <td colspan=15 class=xl91 style='border-right:.5pt solid black'>&nbsp;</td>
+            <td colspan=5 class=xl96 style='border-left:.5pt solid black'>22&nbsp;</td>
+            <td colspan=3 class=xl97 style='border-left:none'>23&nbsp;</td>
+            <td colspan=2 class=xl98 style='border-left:none'>24&nbsp;</td>
+            <td colspan=3 class=xl99 style='border-right:.5pt dashed black;border-left:
+  none'>
+                25&nbsp;
+            </td>
+            <td class=xl102 style='border-top:none;border-left:none'>26&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:5.25pt'>
+            <td height=6 class=xl66 style='height:5.25pt'>&nbsp;</td>
+            <td colspan=5 class=xl106>REFERENCE</td>
+            <td colspan=10 rowspan=2 class=xl81 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black'>
+                <span style='mso-spacerun:yes'> </span>
+            </td>
+            <td colspan=5 rowspan=1 class=xl96>27&nbsp;</td>
+            <td colspan=3 rowspan=1 class=xl97>28&nbsp;</td>
+            <td colspan=2 rowspan=1 class=xl98>&nbsp;29</td>
+            <td colspan=3 rowspan=1 class=xl108 style='border-right:.5pt dashed black;
+  border-bottom:.5pt solid black'>
+                30&nbsp;
+            </td>
+            <td rowspan=1 class=xl111 style='border-bottom:.5pt solid black;border-top:
+  none'>
+                31&nbsp;
+            </td>
+            <td class=xl69>&nbsp;</td>        <!-- Skip class=x169, it's outside the border-->
+
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:5.0pt'>
+            <td height=6 class=xl66 style='height:5.0pt'>&nbsp;</td>
+            <td colspan=5 class=xl112>&nbsp;32</td>
+            <td colspan=5 rowspan=1 class=xl96>27&nbsp;</td>
+            <td colspan=3 rowspan=1 class=xl97>28&nbsp;</td>
+            <td colspan=2 rowspan=1 class=xl98>&nbsp;29</td>
+            <td colspan=3 rowspan=1 class=xl108 style='border-right:.5pt dashed black;
+  border-bottom:.5pt solid black'>
+                30&nbsp;
+            </td>
+            <td rowspan=1 class=xl111 style='border-bottom:.5pt solid black;border-top:
+  none'>
+                31&nbsp;
+            </td>
+            <td rowspan=1 class=
+            <td class=xl69>&nbsp;</td>				<!-- Skip class=x169, it's outside the border-->
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:5.25pt'>
+            <td height=6 class=xl66 style='height:5.25pt'>&nbsp;</td>
+            <td colspan=15 rowspan=2 class=xl118 width=235 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:179pt'>
+                33&nbsp;
+            </td>
+            <td colspan=5 class=xl96 style='border-left:.5pt solid black'>34&nbsp;</td>
+            <td colspan=3 class=xl97 style='border-left:none'>35&nbsp;</td>
+            <td colspan=2 class=xl98 style='border-left:none'>36&nbsp;</td>
+            <td colspan=3 class=xl99 style='border-right:.5pt dashed black;border-left:
+  none'>
+                37&nbsp;
+            </td>
+            <td class=xl102 style='border-top:none;border-left:none'>38&nbsp;</td>
+            <td class=xl69>&nbsp;</td>							<!-- Skip class=x169, it's outside the border-->
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:5.25pt'>
+            <td height=6 class=xl66 style='height:5.25pt'>&nbsp;</td>			<!-- Skip class=x169, it's outside the border-->
+            <td colspan=5 class=xl96 style='border-left:.5pt solid black'>40&nbsp;</td>
+            <td colspan=3 class=xl97 style='border-left:none'>41&nbsp;</td>
+            <td colspan=2 class=xl98 style='border-left:none'>42&nbsp;</td>
+            <td colspan=3 class=xl99 style='border-right:.5pt dashed black;border-left:
+  none'>
+                43&nbsp;
+            </td>
+            <td class=xl102 style='border-top:none;border-left:none'>44&nbsp;</td>
+            <td class=xl69>&nbsp;</td>								<!-- Skip class=x169, it's outside the border-->
+        </tr>
+        <!-- ************************************************* Modified height above this line *******************  -->
+        <tr height=4 style='mso-height-source:userset;height:3.75pt'>
+            <td height=4 class=xl66 style='height:3.75pt'>&nbsp;</td>	<!-- Skip class=x166, it's outside the border-->
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl125 style='border-top:none'>&nbsp;</td>
+            <td class=xl67>45&nbsp;</td>
+            <td class=xl69>&nbsp;</td>					<!-- Skip class=x169, it's outside the border-->
+        </tr>
+        <tr class=xl130 height=25 style='mso-height-source:userset;height:18.75pt'>
+            <td height=25 class=xl126 style='height:18.75pt'>&nbsp;</td>	<!-- Skip class=x169, it's outside the border-->
+            <td class=xl120 width=31 style='width:23pt'>
+                79<span style='mso-spacerun:yes'>   </span>INDEX
+            </td>
+            <td colspan=3 class=xl120 width=25 style='width:19pt'>
+                08<span style='mso-spacerun:yes'>     </span>F/P
+            </td>
+            <td colspan=3 class=xl120 width=30 style='width:23pt'>
+                09<span style='mso-spacerun:yes'>    </span>AWP
+            </td>
+            <td class=xl120 width=25 style='width:19pt'>
+                10<span style='mso-spacerun:yes'>  </span>A/T
+            </td>
+            <td colspan=2 class=xl120 width=40 style='width:31pt'>
+                11<span style='mso-spacerun:yes'>             </span>MAL
+            </td>
+            <td colspan=4 class=xl120 width=71 style='width:54pt'>
+                14<span style='mso-spacerun:yes'>                         </span>MFGR
+            </td>
+            <td colspan=9 class=xl127 width=171 style='width:129pt'>&nbsp;</td>
+            <td colspan=4 class=xl128 width=70 style='width:53pt'>
+                34<span style='mso-spacerun:yes'>                         </span>REF SYMBOL
+            </td>
+            <td colspan=2 class=xl128 width=36 style='width:27pt'>
+                41<span style='mso-spacerun:yes'>       </span>QTY
+            </td>
+            <td colspan=3 class=xl128 width=33 style='width:26pt'>PROJ</td>
+            <td colspan=2 class=xl128 width=29 style='width:22pt'>
+                43<span style='mso-spacerun:yes'>     </span>PRI
+            </td>
+            <td colspan=5 class=xl128 width=64 style='width:48pt'>
+                45<span style='mso-spacerun:yes'>                    </span>DATE ORD
+            </td>
+            <td colspan=3 class=xl128 width=65 style='width:49pt'>
+                49<span style='mso-spacerun:yes'>                       </span>REQ NO
+            </td>
+            <td colspan=4 class=xl128 width=58 style='width:44pt'>
+                53<span style='mso-spacerun:yes'>                    </span>DATE REC
+            </td>
+            <td class=xl129>&nbsp;</td>
+        </tr>
+        <tr height=2 style='mso-height-source:userset;height:2.0pt'>
+            <td height=2 class=xl66 style='height:2.0pt'>&nbsp; 46</td>
+            <td rowspan=1 class=xl131 width=31 style='border-bottom:.5pt solid black;
+  border-top:none;width:23pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;A
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=25 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:19pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;B
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=30 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:23pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;C
+            </td>
+            <td rowspan=1 class=xl135 width=25 style='border-bottom:.5pt solid black;
+  border-top:none;width:19pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;D
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=40 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:31pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;E
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=71 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:54pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;F
+            </td>
+            <td colspan=9 rowspan=1 class=xl132 width=171 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:129pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;G
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=70 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:53pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;H
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=36 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:27pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;I
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=33 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:26pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;J
+            </td>
+            <td colspan=2 rowspan=1 class=xl136 width=29 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:22pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;K
+            </td>
+            <td colspan=5 rowspan=1 class=xl132 width=64 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:48pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;L
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=65 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:49pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;M
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=58 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:44pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right::.5pt solid windowtext' ;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;Z
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=4 style='mso-height-source:userset;height:3.0pt'>
+            <td height=4 class=xl66 style='height:3.0pt'>&nbsp;49</td>
+            <td rowspan=1 class=xl131 width=31 style='border-bottom:.5pt solid black;
+  border-top:none;width:23pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;A
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=25 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:19pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;B
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=30 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:23pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;C
+            </td>
+            <td rowspan=1 class=xl135 width=25 style='border-bottom:.5pt solid black;
+  border-top:none;width:19pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;D
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=40 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:31pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;E
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=71 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:54pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;F
+            </td>
+            <td colspan=9 rowspan=1 class=xl132 width=171 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:129pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;G
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=70 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:53pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;H
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=36 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:27pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;I
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=33 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:26pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;J
+            </td>
+            <td colspan=2 rowspan=1 class=xl136 width=29 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:22pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;K
+            </td>
+            <td colspan=5 rowspan=1 class=xl132 width=64 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:48pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;L
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=65 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:49pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;M
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=58 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:44pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right::.5pt solid windowtext' ;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;Z
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=4 style='mso-height-source:userset;height:3.0pt'>
+            <td height=4 class=xl66 style='height:3.0pt'>&nbsp;52</td>
+            <td rowspan=1 class=xl131 width=31 style='border-bottom:.5pt solid black;
+  border-top:none;width:23pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;A
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=25 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:19pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;B
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=30 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:23pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;C
+            </td>
+            <td rowspan=1 class=xl135 width=25 style='border-bottom:.5pt solid black;
+  border-top:none;width:19pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;D
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=40 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:31pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;E
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=71 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:54pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;F
+            </td>
+            <td colspan=9 rowspan=1 class=xl132 width=171 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:129pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;G
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=70 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:53pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;H
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=36 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:27pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;I
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=33 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:26pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;J
+            </td>
+            <td colspan=2 rowspan=1 class=xl136 width=29 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:22pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;K
+            </td>
+            <td colspan=5 rowspan=1 class=xl132 width=64 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:48pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;L
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=65 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:49pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;M
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=58 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:44pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right::.5pt solid windowtext' ;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;Z
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=4 style='mso-height-source:userset;height:3.0pt'>
+            <td height=4 class=xl66 style='height:3.0pt'>&nbsp;55</td>
+            <td rowspan=1 class=xl131 width=31 style='border-bottom:.5pt solid black;
+  border-top:none;width:23pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;A
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=25 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:19pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;B
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=30 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:23pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;C
+            </td>
+            <td rowspan=1 class=xl135 width=25 style='border-bottom:.5pt solid black;
+  border-top:none;width:19pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;D
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=40 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:31pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;E
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=71 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:54pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;F
+            </td>
+            <td colspan=9 rowspan=1 class=xl132 width=171 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:129pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;G
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=70 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:53pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;H
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=36 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:27pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;I
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=33 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:26pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;J
+            </td>
+            <td colspan=2 rowspan=1 class=xl136 width=29 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:22pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;K
+            </td>
+            <td colspan=5 rowspan=1 class=xl132 width=64 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:48pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;L
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=65 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:49pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;M
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=58 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:44pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right::.5pt solid windowtext' ;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;Z
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=4 style='mso-height-source:userset;height:3.0pt'>
+            <td height=4 class=xl66 style='height:3.0pt'>&nbsp;58</td>
+            <td rowspan=1 class=xl131 width=31 style='border-bottom:.5pt solid black;
+  border-top:none;width:23pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;A
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=25 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:19pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;B
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=30 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:23pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;C
+            </td>
+            <td rowspan=1 class=xl135 width=25 style='border-bottom:.5pt solid black;
+  border-top:none;width:19pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;D
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=40 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:31pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;E
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=71 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:54pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;F
+            </td>
+            <td colspan=9 rowspan=1 class=xl132 width=171 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:129pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;G
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=70 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:53pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;H
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=36 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:27pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;I
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=33 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:26pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;J
+            </td>
+            <td colspan=2 rowspan=1 class=xl136 width=29 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:22pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;K
+            </td>
+            <td colspan=5 rowspan=1 class=xl132 width=64 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:48pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;L
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=65 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:49pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;M
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=58 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:44pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right::.5pt solid windowtext' ;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;Z
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=4 style='mso-height-source:userset;height:3.0pt'>
+            <td height=4 class=xl66 style='height:3.0pt'>&nbsp;61</td>
+            <td rowspan=1 class=xl131 width=31 style='border-bottom:.5pt solid black;
+  border-top:none;width:23pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;A
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=25 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:19pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;B
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=30 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:23pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;C
+            </td>
+            <td rowspan=1 class=xl135 width=25 style='border-bottom:.5pt solid black;
+  border-top:none;width:19pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;D
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=40 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:31pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;E
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=71 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:54pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;F
+            </td>
+            <td colspan=9 rowspan=1 class=xl132 width=171 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:129pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;G
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=70 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:53pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;H
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=36 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:27pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;I
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=33 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:26pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;J
+            </td>
+            <td colspan=2 rowspan=1 class=xl136 width=29 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:22pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;K
+            </td>
+            <td colspan=5 rowspan=1 class=xl132 width=64 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:48pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;L
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=65 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:49pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;M
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=58 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:44pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right::.5pt solid windowtext' ;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;Z
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=4 style='mso-height-source:userset;height:3.0pt'>
+            <td height=4 class=xl66 style='height:3.0pt'>&nbsp;64</td>
+            <td rowspan=1 class=xl131 width=31 style='border-bottom:.5pt solid black;
+  border-top:none;width:23pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;A
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=25 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:19pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;B
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=30 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:23pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;C
+            </td>
+            <td rowspan=1 class=xl135 width=25 style='border-bottom:.5pt solid black;
+  border-top:none;width:19pt;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+  .5pt solid windowtext;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;D
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=40 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:31pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;E
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=71 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:54pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;F
+            </td>
+            <td colspan=9 rowspan=1 class=xl132 width=171 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:129pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;G
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=70 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:53pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;H
+            </td>
+            <td colspan=2 rowspan=1 class=xl132 width=36 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:27pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;I
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=33 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:26pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;J
+            </td>
+            <td colspan=2 rowspan=1 class=xl136 width=29 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:22pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;K
+            </td>
+            <td colspan=5 rowspan=1 class=xl132 width=64 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:48pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;L
+            </td>
+            <td colspan=3 rowspan=1 class=xl132 width=65 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:49pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:none;border-bottom:.5pt solid black;border-left:.5pt solid windowtext'>
+                &nbsp;M
+            </td>
+            <td colspan=4 rowspan=1 class=xl132 width=58 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:44pt;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right::.5pt solid windowtext' ;border-bottom:none;border-left:.5pt solid windowtext'>
+                &nbsp;Z
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp;</td>		<!-- Do not use row -->
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl152>&nbsp;</td>
+            <td class=xl153>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=15 style='mso-height-source:userset;height:11.25pt'>
+            <td height=15 class=xl66 style='height:11.25pt'>&nbsp;</td>
+            <td colspan=45 class=xl154>
+                TECHNICAL DIRECTIVE IDENTIFICATION<span style='mso-spacerun:yes'>            </span>
+            </td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr class=xl164 height=19 style='mso-height-source:userset;height:14.25pt'>
+            <td height=19 class=xl155 style='height:14.25pt'>&nbsp;</td>
+            <td colspan=8 class=xl156 width=111 style='width:84pt'>
+                <a href="#RANGE!A1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:none'>
+                        A22<span style='mso-spacerun:yes'>
+                        </span>WORK UNIT CODE
+                    </span>
+                </a>
+            </td>
+            <td colspan=3 class=xl158 width=49 style='border-left:none;width:38pt'>
+                A29<span style='mso-spacerun:yes'>                      </span>ACTION ORG
+            </td>
+            <td colspan=2 class=xl157 width=32 style='border-left:none;width:24pt'>
+                <a href="#RANGE!W1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:
+  none'>A32<span style='mso-spacerun:yes'>           </span>TRANS</span>
+                </a>
+            </td>
+            <td class=xl157 width=30 style='border-left:none;width:23pt'>
+                <a href="#RANGE!Q1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:
+  none'>A34<span style='mso-spacerun:yes'>                     </span>MAIN/L</span>
+                </a>
+            </td>
+            <td colspan=2 class=xl157 width=37 style='border-left:none;width:28pt'>
+                <a href="#RANGE!M1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:
+  none'>A35<span style='mso-spacerun:yes'>                     </span>ACT TAKEN</span>
+                </a>
+            </td>
+            <td colspan=2 class=xl158 width=39 style='border-left:none;width:30pt'>
+                A36<span style='mso-spacerun:yes'>                                  </span>MAL CODE
+            </td>
+            <td colspan=2 class=xl158 width=37 style='border-left:none;width:28pt'>
+                A39<span style='mso-spacerun:yes'>                                  </span>ITEMS/P
+            </td>
+            <td colspan=5 class=xl158 width=84 style='border-left:none;width:63pt'>
+                A41<span style='mso-spacerun:yes'>
+                </span>MAN HOURS
+            </td>
+            <td colspan=3 class=xl158 width=69 style='border-right:2.0pt double black;
+  border-left:none;width:52pt'>
+                A45<span style='mso-spacerun:yes'>                      </span>ELAPSED M/T
+            </td>
+            <td colspan=3 class=xl160 width=34 style='border-left:none;width:26pt'>
+                FOR<span style='mso-spacerun:yes'>              </span>INTERIN
+            </td>
+            <td colspan=3 class=xl157 width=39 style='width:30pt'>
+                <a href="#RANGE!C1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:none'>FOR CODE</span>
+                </a>
+            </td>
+            <td colspan=5 class=xl158 width=64 style='border-left:none;width:48pt'>
+                F11
+                BASIC NO
+            </td>
+            <td class=xl157 width=35 style='border-left:none;width:26pt'>
+                <a href="#RANGE!F1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:
+  none'>F15 RV</span>
+                </a>
+            </td>
+            <td colspan=2 class=xl157 width=30 style='border-left:none;width:23pt'>
+                <a href="#RANGE!G1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:
+  none'>F16 AM</span>
+                </a>
+            </td>
+            <td colspan=2 class=xl158 width=30 style='border-left:none;width:23pt'>
+                F17
+                PART
+            </td>
+            <td colspan=2 class=xl158 width=28 style='border-left:none;width:21pt'>
+                F19
+                KIT
+            </td>
+            <td class=xl163>&nbsp;</td>									<!-- Do not use row -->
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp; 67</td>
+            <td colspan=8 rowspan=1 class=xl165 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;font-size:10.0pt;color:white;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=3 rowspan=1 class=xl167 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;GC7
+            </td>
+            <td colspan=2 rowspan=1 class=xl167 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;B
+            </td>
+            <td rowspan=1 class=xl167 style='border-bottom:.5pt solid black;font-size:
+  8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:.5pt solid black;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;C
+            </td>
+            <td colspan=2 rowspan=1 class=xl167 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;D
+            </td>
+            <td colspan=2 rowspan=1 class=xl168 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;E
+            </td>
+            <td colspan=2 rowspan=1 class=xl167 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;F
+            </td>
+            <td colspan=3 rowspan=1 class=xl169 style='border-bottom:.5pt solid black'>&nbsp;68</td>
+            <td colspan=2 rowspan=1 class=xl169 style='border-bottom:.5pt solid black'>&nbsp;69</td>
+            <td colspan=2 rowspan=1 class=xl169 style='border-bottom:.5pt solid black'>&nbsp;70</td>
+            <td rowspan=1 class=xl170 style='border-bottom:.5pt solid black'>&nbsp;71</td>
+            <td class=xl176 style='border-left:none'>&nbsp; 74A</td>
+            <td class=xl177 style='font-size:10.0pt;color:WHITE;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border:.5pt solid windowtext;background:white;
+  mso-pattern:black none'>
+                &nbsp;
+            </td>		<!-- Do not use row SPACE FOR BOX 74-->
+            <td class=xl66>&nbsp;</td>				<!-- Do not use row SPACE FOR BOX 74-->
+            <td colspan=3 rowspan= class=xl167 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;75
+            </td>
+            <td colspan=5 rowspan=1 class=xl174 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;76
+            </td>
+            <td rowspan=1 class=xl167 style='border-bottom:.5pt solid black;font-size:
+  8.0pt;black:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;77
+            </td>
+            <td colspan=2 rowspan=1 class=xl167 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;78
+            </td>
+            <td colspan=2 rowspan=1 class=xl167 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;79
+            </td>
+            <td colspan=2 rowspan=1 class=xl169 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:#F2F2F2;mso-pattern:black none'>
+                &nbsp;80
+            </td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+
+        <tr class=xl203 height=19 style='mso-height-source:userset;height:14.25pt'>
+            <td height=19 class=xl189 style='height:14.25pt'>&nbsp;</td>
+            <td colspan=5 class=xl190>A48 TYPE EQUIP</td>
+            <td colspan=6 class=xl191 style='border-left:none'>A52 BU/SER NUMBER</td>
+            <td colspan=2 class=xl192 style='border-left:none'>
+                <a href="#RANGE!K1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:none'>A58 DISCO</span>
+                </a>
+            </td>
+            <td class=xl193 style='border-top:none;border-left:none'>
+                <a href="#RANGE!U1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:none'>
+                        A59 T/<span style='display:none'>M</span>
+                    </span>
+                </a>
+            </td>
+            <td colspan=2 class=xl192 style='border-left:none'>
+                <a href="#RANGE!O1">
+                    <span style='color:windowtext;font-size:4.5pt;text-decoration:none'>A60 POSIT</span>
+                </a>
+            </td>
+            <td colspan=2 class=xl191 style='border-left:none'>A62 FID</td>
+            <td colspan=4 class=xl191 style='border-left:none'>A65 SAFETY/EI SER</td>
+            <td colspan=3 class=xl191 style='border-left:none'>A69 METER</td>
+            <td colspan=4 class=xl191 style='border-left:none'>SE MFGR</td>
+            <td colspan=3 class=xl194 style='border-left:none'>A74</td>
+            <td colspan=2 class=xl196>F21</td>
+            <td colspan=6 class=xl198 width=99 style='border-right:.5pt solid black;
+  width:74pt'>
+                INVENTORY<span style='mso-spacerun:yes'>
+                </span>F22 PERM UNIT CODE
+            </td>
+            <td colspan=6 class=xl200 style='border-left:none'>F28</td>
+            <td class=xl202>&nbsp;</td>	<!-- Do not use row -->
+        </tr>
+
+        <tr height=6 style='mso-height-source:userset;height:5.5pt'>
+            <td height=65 class=xl66 style='height:5.5pt'>&nbsp;</td> <!-- Do not use row -->
+            <td colspan=5 class=xl179 style='font-size:10.0pt;color:black;font-weight:
+  700;text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:none;border-right:.5pt solid windowtext;
+  border-bottom:.5pt solid windowtext;border-left:none;background:white;
+  mso-pattern:black none'>
+                &nbsp;AYNE
+            </td>
+            <td colspan=6 class=xl205 style='border-left:none;font-size:10.0pt;
+  color:black;font-weight:700;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:.5pt solid windowtext;
+  border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.Buno)
+            </td>
+            <td colspan=2 class=xl206 style='border-left:none;font-size:10.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:.5pt solid windowtext;
+  border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;222
+            </td>
+            <td class=xl206 style='border-left:none;font-size:10.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:none;border-right:.5pt solid windowtext;
+  border-bottom:.5pt solid windowtext;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;223
+            </td>
+            <td colspan=2 class=xl206 style='border-left:none;font-size:10.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:.5pt solid windowtext;
+  border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;224
+            </td>
+            <td colspan=2 class=xl182 style='border-left:none'>&nbsp;</td>
+            <td colspan=4 class=xl182 style='border-left:none'>&nbsp;</td>
+            <td colspan=3 class=xl182 style='border-left:none'>&nbsp;</td>
+            <td colspan=4 class=xl182 style='border-left:none'>&nbsp;</td>
+            <td colspan=3 class=xl188 style='border-left:none'>&nbsp;</td>
+            <td colspan=2 class=xl208 style='border-right:.5pt solid black'>&nbsp;</td>
+            <td colspan=6 class=xl188 style='border-left:none'>&nbsp;</td>
+            <td colspan=6 class=xl188>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+
+        <tr class=xl215 height=10 style='height:10.0pt'>
+            <td height=10 class=xl210 style='height:10.0pt'>&nbsp;</td>
+            <td colspan=15 class=xl211>REPAIR CYCLE</td>
+            <td colspan=13 class=xl212 style='border-right:2.0pt double black'>
+                REMOVED/OLD
+                ITEM
+            </td>
+            <td colspan=18 class=xl211>INSTALLED/NEW ITEM</td>
+            <td class=xl214>&nbsp;</td>
+        </tr>
+
+        <tr class=xl130 height=7 style='height:6.25pt'>
+            <td height=7 class=xl126 style='height:6.25pt'>&nbsp;</td>
+            <td colspan=4 class=xl216>&nbsp;</td>
+            <td colspan=4 class=xl216>DATE</td>
+            <td colspan=4 class=xl216>TIME</td>
+            <td colspan=3 class=xl217>
+                <a href="#RANGE!Y1">
+                    <span style='color:windowtext;
+  font-size:6.0pt;text-decoration:none'>EOC</span>
+                </a>
+            </td>
+            <td colspan=13 class=xl218 style='border-right:2.0pt double black'>
+                CAGE | SN
+                | PN | DATE REMOVE | TIME CYCLES
+            </td>
+            <td colspan=18 class=xl218 style='border-right:.5pt solid black;border-left:
+  none'>
+                CAGE | SN | PN | TIME CYCLES
+            </td>
+            <td class=xl129 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr class=xl130 height=6 style='mso-height-source:userset;height:5.25pt'>
+            <td height=6 class=xl126 style='height:5.25pt'>&nbsp;</td>
+            <td colspan=4 class=xl221 style='border-right:.5pt solid black'>&nbsp;</td>
+            <td colspan=4 class=xl223 style='border-right:.5pt solid black;border-left:
+  none'>
+                B08
+            </td>
+            <td colspan=4 class=xl223 style='border-right:.5pt solid black;border-left:
+  none'>
+                B12
+            </td>
+            <td colspan=3 class=xl223 style='border-left:none'>B16</td>
+            <td colspan=13 rowspan=7 class=xl218 style='border-right:2.0pt double black;
+  border-bottom:.5pt solid black;font-size:6.0pt;color:BLACK;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:none;border-right:none;border-bottom:
+  none;border-left:2.0pt double windowtext;background:white;mso-pattern:black none'>
+                &nbsp;ABCDE2
+            </td>
+            <td colspan=18 rowspan=7 class=xl218 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;font-size:6.0pt;color:BLACK;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:none;border-right:.5pt solid black;border-bottom:
+  none;border-left:2.0pt double windowtext;background:white;mso-pattern:black none'>
+                &nbsp;ABCDE3
+            </td>
+            <td class=xl129 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr class=xl236 height=7 style='mso-height-source:userset;height:6.75pt'>
+            <td height=7 class=xl225 style='height:6.75pt'>&nbsp;</td>
+            <td colspan=4 class=xl112 style='border-right:.5pt solid black'>RECEIVED</td>
+            <td colspan=4 class=xl227 style='border-right:.5pt solid black;border-left:
+  none;font-size:8.0pt;color:BLACK;font-weight:400;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:Arial, sans-serif;
+  border-top:none;border-right:none;border-bottom:.5pt solid windowtext;
+  border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.InitiateDate)
+            </td>
+            <td colspan=4 class=xl230 style='border-right:.5pt solid black;border-left:
+  none;font-size:8.0pt;color:BLACK;font-weight:400;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:Arial, sans-serif;
+  border-top:none;border-right:none;border-bottom:.5pt solid windowtext;
+  border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;			<!--lEAVE BLANK FOR B12 -->
+            </td>
+            <td colspan=3 class=xl233 style='border-left:none;font-size:8.0pt;color:BLACK;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid windowtext;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;ABCDE4
+            </td>
+            <td class=xl235 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=6 style='mso-height-source:userset;height:5.25pt'>
+            <td height=6 class=xl66 style='height:5.25pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl106 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black'>
+                IN WORK
+            </td>
+            <td colspan=4 class=xl237 style='border-right:.5pt solid black;border-left:
+  none'>
+                B19
+            </td>
+            <td colspan=4 class=xl237 style='border-right:.5pt solid black;border-left:
+  none'>
+                B23
+            </td>
+            <td colspan=3 class=xl240 style='border-left:none'>B27</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+            <td height=16 class=xl66 style='height:12.0pt'>&nbsp;</td>
+            <td colspan=4 class=xl227 style='border-right:.5pt solid black;border-left:
+  none;font-size:8.0pt;color:black;font-weight:400;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:Arial, sans-serif;
+  border-top:none;border-right:none;border-bottom:.5pt solid windowtext;
+  border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.IwDate)
+            </td>
+            <td colspan=4 class=xl230 style='border-right:.5pt solid black;border-left:
+  none;font-size:8.0pt;color:black;font-weight:400;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:Arial, sans-serif;
+  border-top:none;border-right:none;border-bottom:.5pt solid windowtext;
+  border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;	<!-- Leave blank for B23-->
+            </td>
+            <td colspan=3 class=xl233 style='border-left:none;font-size:8.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid windowtext;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;EOC
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=6 style='mso-height-source:userset;height:5.25pt'>
+            <td height=6 class=xl66 style='height:5.25pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl224 style='border-bottom:.5pt solid black'>COMPLETED</td>
+            <td colspan=4 class=xl243 style='border-left:none'>B30</td>
+            <td colspan=4 class=xl243 style='border-left:none'>B34</td>
+            <td colspan=3 rowspan=2 class=xl244>&nbsp;</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr class=xl130 height=17 style='mso-height-source:userset;height:12.75pt'>
+            <td height=17 class=xl126 style='height:12.75pt'>&nbsp;</td>
+            <td colspan=4 class=xl227 style='border-right:.5pt solid black;border-left:
+  none;font-size:8.0pt;color:white;font-weight:400;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:Arial, sans-serif;
+  border-top:none;border-right:none;border-bottom:.5pt solid windowtext;
+  border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 class=xl246 style='border-left:none;font-size:8.0pt;color:white;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:none;border-right:.5pt solid windowtext;
+  border-bottom:.5pt solid windowtext;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td class=xl129 style='border-left:none'>&nbsp;</td>
+        </tr>
+
+        <tr height=17 style='mso-height-source:userset;height:12.75pt'>
+            <td height=17 class=xl66 style='height:12.75pt'>&nbsp;</td>
+            <td colspan=15 class=xl248 style='border-right:2.0pt double black'>
+                AWAITING
+                MAINTENANCE
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=11 style='mso-height-source:userset;height:8.25pt'>
+            <td height=11 class=xl66 style='height:8.25pt'>&nbsp;</td>
+            <td class=xl254>B38</td>
+            <td colspan=6 class=xl254>B39 HOURS</td>
+            <td class=xl255>B43</td>
+            <td colspan=4 class=xl254>B44 HOURS</td>
+            <td class=xl255>B48</td>
+            <td colspan=2 class=xl254><span style='mso-spacerun:yes'> </span>B49 HOURS</td>
+            <td colspan=4 class=xl256>DISCREPANCY</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl172 style='border-top:none'>&nbsp;</td>
+            <td class=xl173 style='border-top:none'>&nbsp;</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=15 style='mso-height-source:userset;height:11.25pt'>
+            <td height=15 class=xl66 style='height:11.25pt'>&nbsp;</td>   <!-- Do not use row-->
+            <td class=xl257>&nbsp;B</td>
+            <td colspan=4 class=xl258 style='border-left:none'>&nbsp;C</td>
+            <td colspan=2 class=xl258>&nbsp;D</td>
+            <td class=xl260>&nbsp;E</td>
+            <td colspan=3 class=xl258 style='border-right:.5pt solid black;border-left:
+  none'>
+                &nbsp;F
+            </td>
+            <td class=xl262>&nbsp;G</td>
+            <td class=xl260>&nbsp;H</td>
+            <td class=xl263 style='border-left:none'>&nbsp;I</td>
+            <td class=xl262>&nbsp;J</td>
+            <td colspan=31 rowspan=6 class=xl264 width=513 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:388pt;font-size:8.0pt;color:BLACK;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Arial, sans-serif;border-top:none;border-right:none;
+  border-bottom:none;border-left:2.0pt double windowtext;background:white;
+  mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.Discrepancy)
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl66 style='height:12.75pt'>&nbsp;</td>
+            <td colspan=15 class=xl267>
+                <span style='mso-spacerun:yes'> </span>MAINTENANCE/SUPPLY RECORD
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=8 style='mso-height-source:userset;height:6.0pt'>
+            <td height=8 class=xl66 style='height:6.0pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl217>
+                <a href="#RANGE!S1">
+                    <span style='color:windowtext;font-size:6.0pt;text-decoration:none'>JOB STATUS</span>
+                </a>
+            </td>
+            <td colspan=4 rowspan=2 class=xl216>DATE</td>
+            <td colspan=4 rowspan=2 class=xl216>TIME</td>
+            <td colspan=3 rowspan=2 class=xl217>
+                <a href="#RANGE!Y1">
+                    <span style='color:windowtext;font-size:6.0pt;text-decoration:none'>EOC</span>
+                </a>
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=4 style='mso-height-source:userset;height:3.0pt'>
+            <td height=4 class=xl66 style='height:3.0pt'>&nbsp;</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=12 style='mso-height-source:userset;height:9.0pt'>
+            <td height=12 class=xl66 style='height:9.0pt'>&nbsp;</td>
+            <td colspan=4 class=xl106 style='border-right:.5pt solid black'>B53</td>
+            <td colspan=4 class=xl223 style='border-right:.5pt solid black;border-left:
+  none'>
+                B54
+            </td>
+            <td colspan=4 class=xl268 style='border-right:.5pt solid black;border-left:
+  none'>
+                B58
+            </td>
+            <td colspan=3 class=xl223 style='border-left:none'>B62</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=7 style='mso-height-source:userset;height:5.25pt'>
+            <td height=7 class=xl66 style='height:5.25pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl271 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:none;
+  background:white;mso-pattern:black none'>
+                &nbsp;229
+            </td>
+            <td colspan=4 rowspan=2 class=xl273 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:none;border-right:none;border-bottom:
+  none;border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;230
+            </td>
+            <td colspan=4 rowspan=2 class=xl276 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;231
+            </td>
+            <td colspan=3 rowspan=2 class=xl272 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;232
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp;</td> <!-- Do not use row-->
+            <td colspan=23 rowspan=4 class=xl287>&nbsp;</td>
+            <td colspan=8 rowspan=2 class=xl224>PILOT/INITIATOR</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl241 style='border-right:.5pt solid black'>B65</td>
+            <td colspan=4 rowspan=2 class=xl237 style='border-right:.5pt solid black'>B66</td>
+            <td colspan=4 rowspan=2 class=xl237 style='border-right:.5pt solid black'>B70</td>
+            <td colspan=3 rowspan=2 class=xl240>B74</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp;</td>	<!-- Do not use row-->
+            <td colspan=8 rowspan=2 class=xl299 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;font-size:8.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:none;border-right:none;border-bottom:
+  none;border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.Initiator)
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=8 style='mso-height-source:userset;height:6.0pt'>
+            <td height=8 class=xl66 style='height:6.0pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl271 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:none;
+  background:white;mso-pattern:black none'>
+                &nbsp;225
+            </td>
+            <td colspan=4 rowspan=2 class=xl273 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;font-size:8.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Arial, sans-serif;border-top:none;border-right:none;border-bottom:
+  none;border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;226
+            </td>
+            <td colspan=4 rowspan=2 class=xl276 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;227
+            </td>
+            <td colspan=3 rowspan=2 class=xl272 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;228
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=7 style='mso-height-source:userset;height:5.25pt'>
+            <td height=7 class=xl66 style='height:5.25pt'>&nbsp;</td>
+            <td colspan=31 rowspan=3 class=xl305 style='border-right:.5pt solid black'>
+                CORRECTIVE
+                ACTION
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=12 style='mso-height-source:userset;height:9.0pt'>
+            <td height=12 class=xl66 style='height:9.0pt'>&nbsp;</td>
+            <td colspan=4 class=xl289>C08</td>
+            <td colspan=4 class=xl243 style='border-left:none'>C09</td>
+            <td colspan=4 class=xl243 style='border-left:none'>C13</td>
+            <td colspan=3 class=xl308 style='border-left:none'>C17</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=8 style='mso-height-source:userset;height:6.0pt'>
+            <td height=8 class=xl66 style='height:6.0pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl271 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:none;
+  background:white;mso-pattern:black none'>
+                &nbsp;229
+            </td>
+            <td colspan=4 rowspan=2 class=xl312 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;230
+            </td>
+            <td colspan=4 rowspan=2 class=xl276 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;231
+            </td>
+            <td colspan=3 rowspan=2 class=xl272 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:black;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;232
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=7 style='mso-height-source:userset;height:5.25pt'>
+            <td height=7 class=xl66 style='height:5.25pt'>&nbsp;</td>
+            <td colspan=31 rowspan=11 class=xl264 width=513 style='border-right:.5pt solid black;
+  width:388pt;font-size:8.0pt;color:black;font-weight:400;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:Arial, sans-serif;
+  border-top:none;border-right:none;border-bottom:none;border-left:2.0pt double windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.CorrAction)
+                <p></p>
+                <p>@Html.DisplayFor(model => model.MxCtrlNotes)</p>
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl289>C20</td>
+            <td colspan=4 rowspan=2 class=xl243>C21</td>
+            <td colspan=4 rowspan=2 class=xl243>C25</td>
+            <td colspan=3 rowspan=2 class=xl308>C29</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp;</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=9 style='mso-height-source:userset;height:6.75pt'>
+            <td height=9 class=xl66 style='height:6.75pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl271 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:none;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl312 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl276 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=3 rowspan=2 class=xl272 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp;</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=12 style='mso-height-source:userset;height:9.0pt'>
+            <td height=12 class=xl66 style='height:9.0pt'>&nbsp;</td>
+            <td colspan=4 class=xl289>C32</td>
+            <td colspan=4 class=xl243 style='border-left:none'>C33</td>
+            <td colspan=4 class=xl243 style='border-left:none'>C37</td>
+            <td colspan=3 class=xl308 style='border-left:none'>C41</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=8 style='mso-height-source:userset;height:6.0pt'>
+            <td height=8 class=xl66 style='height:6.0pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl271 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:none;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl312 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl276 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=3 rowspan=2 class=xl272 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=9 style='mso-height-source:userset;height:6.75pt'>
+            <td height=9 class=xl66 style='height:6.75pt'>&nbsp;</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=12 style='mso-height-source:userset;height:9.0pt'>
+            <td height=12 class=xl66 style='height:9.0pt'>&nbsp;</td>
+            <td colspan=4 class=xl289>C44</td>
+            <td colspan=4 class=xl243 style='border-left:none'>C45</td>
+            <td colspan=4 class=xl243 style='border-left:none'>C49</td>
+            <td colspan=3 class=xl308 style='border-left:none'>C53</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=5 style='mso-height-source:userset;height:3.75pt'>
+            <td height=5 class=xl66 style='height:3.75pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl271 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:none;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl312 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl276 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=3 rowspan=2 class=xl272 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=10 style='mso-height-source:userset;height:7.5pt'>
+            <td height=10 class=xl66 style='height:7.5pt'>&nbsp;</td>
+            <td class=xl69 style='border-left:none'>&nbsp;</td>
+        </tr>
+        <tr height=12 style='mso-height-source:userset;height:9.0pt'>
+            <td height=12 class=xl66 style='height:9.0pt'>&nbsp;</td>
+            <td colspan=4 class=xl289>C56</td>
+            <td colspan=4 class=xl243 style='border-left:none'>C57</td>
+            <td colspan=4 class=xl243 style='border-left:none'>C61</td>
+            <td colspan=3 class=xl308 style='border-left:none'>C65</td>
+            <td class=xl176>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl316>&nbsp;</td>
+            <td class=xl317>CF REQ</td>
+            <td class=xl318>&nbsp;</td>
+            <td class=xl317>QA REQ</td>
+            <td class=xl318>&nbsp;</td>
+            <td class=xl318>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl271 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:none;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl312 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl276 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=3 rowspan=2 class=xl272 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td class=xl176>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+            <td rowspan=2 class=xl319 style='border-bottom:.5pt solid black;font-size:
+  8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td class=xl67>&nbsp;</td>
+            <td rowspan=2 class=xl319 style='border-bottom:.5pt solid black;font-size:
+  8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=10 style='mso-height-source:userset;height:7.5pt'>
+            <td height=10 class=xl66 style='height:7.5pt'>&nbsp;</td>
+            <td colspan=25 rowspan=3 class=xl320 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black'>
+                &nbsp;
+            </td>
+            <td class=xl163 style='border-left:none'>&nbsp;</td>
+            <td class=xl164>&nbsp;</td>
+            <td class=xl164>&nbsp;</td>
+            <td class=xl164>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=12 style='mso-height-source:userset;height:9.0pt'>
+            <td height=12 class=xl66 style='height:9.0pt'>&nbsp;</td>
+            <td colspan=4 class=xl289>D08</td>
+            <td colspan=4 class=xl243 style='border-left:none'>D09</td>
+            <td colspan=4 class=xl243 style='border-left:none'>D13</td>
+            <td colspan=3 class=xl308 style='border-left:none'>D17</td>
+            <td class=xl323 style='border-left:none'>&nbsp;</td>
+            <td class=xl324>RFI</td>
+            <td class=xl325>&nbsp;</td>
+            <td class=xl324>BCM</td>
+            <td class=xl325>&nbsp;</td>
+            <td class=xl325>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=6 style='mso-height-source:userset;height:4.5pt'>
+            <td height=6 class=xl66 style='height:4.5pt'>&nbsp;</td>
+            <td colspan=4 rowspan=2 class=xl271 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:none;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl312 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=4 rowspan=2 class=xl276 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td colspan=3 rowspan=2 class=xl272 style='border-bottom:.5pt solid black;
+  font-size:8.0pt;color:white;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;
+            </td>
+            <td class=xl329 style='border-left:none'>&nbsp;</td>
+            <td class=xl185>&nbsp;</td>
+            <td class=xl185>&nbsp;</td>
+            <td class=xl185>&nbsp;</td>
+            <td class=xl185>&nbsp;</td>
+            <td class=xl185>&nbsp;</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=11 style='mso-height-source:userset;height:8.25pt'>
+            <td height=11 class=xl66 style='height:8.25pt'>&nbsp;</td>
+            <td colspan=7 class=xl330>CORRECTED BY<span style='mso-spacerun:yes'> </span></td>
+            <td colspan=6 class=xl242 style='border-left:none'>
+                INSPECTED BY<span style='mso-spacerun:yes'> </span>
+            </td>
+            <td colspan=10 class=xl242 style='border-left:none'>SUPERVISOR</td>
+            <td colspan=8 class=xl242 style='border-left:none'>MAINT CONTROL</td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=14 style='mso-height-source:userset;height:10.5pt'>
+            <td height=14 class=xl66 style='height:10.5pt'>&nbsp;</td>
+            <td colspan=12 rowspan=2 class=xl125>JOB CONTROL NUMBER</td>
+            <td colspan=3 rowspan=2 class=xl331>
+                <span style='color:windowtext;font-size:6.0pt'>A19 <br />WORK CENTER</span>
+            </td>
+            <td colspan=7 rowspan=2 class=xl333 style='border-bottom:.5pt solid black;
+  font-size:9.0pt;color:BLACK;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:2.0pt double windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.Worker)
+            </td>
+            <td colspan=6 rowspan=2 class=xl334 style='border-bottom:.5pt solid black;
+  font-size:9.0pt;color:BLACK;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.Inspector)
+            </td>
+            <td colspan=10 rowspan=2 class=xl334 style='border-bottom:.5pt solid black;
+  font-size:9.0pt;color:BLACK;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;202
+            </td>
+            <td colspan=8 rowspan=2 class=xl334 style='border-bottom:.5pt solid black;
+  font-size:9.0pt;color:BLACK;font-weight:400;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:.5pt solid windowtext;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.MxCtrl)
+            </td>
+            <td class=xl69>&nbsp;</td>	<!-- Do Not use this row -->
+        </tr>
+        <tr height=4 style='mso-height-source:userset;height:3.0pt'>
+            <td height=4 class=xl66 style='height:3.0pt'>&nbsp;</td>	<!-- Do Not use this row -->
+            <td class=xl69>&nbsp;</td>	<!-- Do Not use this row -->
+        </tr>
+        <tr height=12 style='mso-height-source:userset;height:9.0pt'>
+            <td height=12 class=xl66 style='height:9.0pt'>&nbsp;</td>	<!-- Do Not use this row -->
+            <td colspan=4 class=xl164>A08 ORG</td>
+            <td colspan=4 class=xl164>A11 DAY</td>
+            <td colspan=2 class=xl164>A14 SER</td>
+            <td colspan=2 class=xl342>A17 SUF</td>
+            <td colspan=3 rowspan=2 class=xl343 style='border-bottom:.5pt solid black;
+  font-size:10.0pt;color:BLACK;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+  border-right:none;border-bottom:none;border-left:.5pt solid windowtext;
+  background:white;mso-pattern:black none'>
+                &nbsp;213
+            </td>
+            <td colspan=2 rowspan=2 class=xl345 style='border-right:.5pt solid black;
+                  border-bottom:.5pt solid black;font-size:18.0pt;color:BLACK;font-weight:400;
+                  text-decoration:none;text-underline-style:none;text-line-through:none;
+                  font-family:Arial, sans-serif;border-top:.5pt solid windowtext;border-right:
+                  none;border-bottom:none;border-left:2.0pt double windowtext;background:white;
+                  mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.UDP)
+            </td>
+            <td colspan=3 class=xl347 style='border-right:.5pt solid black;border-left:
+                  none'>
+                MODEX
+            </td>
+            <td colspan=2 class=xl347 style='border-right:.5pt solid black;border-left:
+                 none'>
+                PRI
+            </td>
+            <td colspan=6 class=xl242 style='border-left:none'>TURN IN DOCUMENT</td>
+            <td colspan=11 class=xl223 style='border-right:.5pt solid black;border-left:
+                 none'>
+                SYSTEM/REASON
+            </td>
+            <td colspan=7 class=xl223 style='border-left:none'>MCN</td>
+            <td class=xl69>&nbsp;</td> <!-- Do Not use this row -->
+        </tr>
+        <tr height=17 style='mso-height-source:userset;height:12.75pt'>
+            <td height=17 class=xl66 style='height:12.75pt'>&nbsp;GC7</td>
+            <td colspan=10 class=xl348 style='border-right:.5pt solid black;font-size:
+                 10.0pt;color:BLACK;font-weight:700;text-decoration:none;text-underline-style:
+                 none;text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+                 border-right:none;border-bottom:.5pt solid windowtext;border-left:none;
+                 background:white;mso-pattern:black none'>
+                &nbsp;205
+            </td>
+            <td colspan=2 class=xl350 style='border-left:none'>&nbsp;206</td>
+            <td colspan=3 class=xl355 style='border-right:.5pt solid black;border-left:
+                none;font-size:10.0pt;color:BLACK;font-weight:700;text-decoration:none;
+                text-underline-style:none;text-line-through:none;font-family:Arial, sans-serif;
+                border-top:none;border-right:none;border-bottom:.5pt solid windowtext;
+                border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;207
+            </td>
+            <td colspan=2 class=xl358 style='border-right:.5pt solid black;border-left:
+  none'>
+                &nbsp;208
+            </td>
+            <td colspan=3 class=xl360 style='border-left:none'>&nbsp;209</td>
+            <td colspan=3 class=xl360 style='border-left:none'>&nbsp;210</td>
+            <td colspan=11 class=xl361 style='border-right:.5pt solid black;border-left:
+                none;font-size:7.5pt;color:BLACK;font-weight:400;text-decoration:none;
+                text-underline-style:none;text-line-through:none;font-family:Arial, sans-serif;
+                border-top:none;border-right:none;border-bottom:.5pt solid windowtext;
+                border-left:.5pt solid windowtext;background:white;mso-pattern:black none'>
+                &nbsp;@Html.DisplayFor(model => model.SysReason)
+            </td>
+            <td colspan=7 class=xl364 style='border-left:none;font-size:10.0pt;
+                color:BLACK;font-weight:700;text-decoration:none;text-underline-style:none;
+                text-line-through:none;font-family:Arial, sans-serif;border-top:none;
+                border-right:none;border-bottom:.5pt solid windowtext;border-left:.5pt solid windowtext'>
+                &nbsp;@Html.DisplayFor(model => model.MCN)
+            </td>
+            <td class=xl69>&nbsp;</td>
+        </tr>
+        <tr height=8 style='page-break-before:always;mso-height-source:userset;
+                height:6.0pt'>
+            <td height=8 class=xl67 style='height:6.0pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67 colspan=7 style='mso-ignore:colspan'>INPROs:</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl366>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl366>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td colspan=46 rowspan=11 class=xl367 width=748 style='border-right:.5pt solid black;
+                border-bottom:.5pt solid black;width:567pt;font-size:8.0pt;color:white;
+                font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+                none;font-family:Arial, sans-serif;border-top:.5pt solid windowtext;
+                border-right:none;border-bottom:none;border-left:.5pt solid windowtext;
+                background:white;mso-pattern:black none'>
+                    &nbsp;
+            </td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <tr height=17 style='height:12.75pt'>
+            <td height=17 class=xl67 style='height:12.75pt'>&nbsp;</td>
+            <td class=xl67>&nbsp;</td>
+        </tr>
+        <![if supportMisalignedColumns]>
+        <tr height=0 style='display:none'>
+            <td width=6 style='width:5pt'></td>
+            <td width=31 style='width:23pt'></td>
+            <td width=5 style='width:4pt'></td>
+            <td width=15 style='width:11pt'></td>
+            <td width=5 style='width:4pt'></td>
+            <td width=5 style='width:4pt'></td>
+            <td width=20 style='width:15pt'></td>
+            <td width=5 style='width:4pt'></td>
+            <td width=25 style='width:19pt'></td>
+            <td width=10 style='width:8pt'></td>
+            <td width=30 style='width:23pt'></td>
+            <td width=9 style='width:7pt'></td>
+            <td width=16 style='width:12pt'></td>
+            <td width=16 style='width:12pt'></td>
+            <td width=30 style='width:23pt'></td>
+            <td width=13 style='width:10pt'></td>
+            <td width=24 style='width:18pt'></td>
+            <td width=29 style='width:22pt'></td>
+            <td width=10 style='width:8pt'></td>
+            <td width=19 style='width:14pt'></td>
+            <td width=18 style='width:14pt'></td>
+            <td width=19 style='width:14pt'></td>
+            <td width=7 style='width:5pt'></td>
+            <td width=32 style='width:24pt'></td>
+            <td width=8 style='width:6pt'></td>
+            <td width=18 style='width:14pt'></td>
+            <td width=24 style='width:18pt'></td>
+            <td width=20 style='width:15pt'></td>
+            <td width=25 style='width:19pt'></td>
+            <td width=11 style='width:8pt'></td>
+            <td width=14 style='width:11pt'></td>
+            <td width=9 style='width:7pt'></td>
+            <td width=10 style='width:8pt'></td>
+            <td width=14 style='width:11pt'></td>
+            <td width=15 style='width:11pt'></td>
+            <td width=6 style='width:5pt'></td>
+            <td width=15 style='width:11pt'></td>
+            <td width=5 style='width:4pt'></td>
+            <td width=15 style='width:11pt'></td>
+            <td width=23 style='width:17pt'></td>
+            <td width=35 style='width:26pt'></td>
+            <td width=18 style='width:14pt'></td>
+            <td width=12 style='width:9pt'></td>
+            <td width=18 style='width:14pt'></td>
+            <td width=12 style='width:9pt'></td>
+            <td width=13 style='width:10pt'></td>
+            <td width=15 style='width:11pt'></td>
+            <td width=7 style='width:5pt'></td>
+        </tr>
+        <![endif]>
+    </table>
+    </body>
+</html>

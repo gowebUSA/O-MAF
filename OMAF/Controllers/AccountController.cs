@@ -23,6 +23,7 @@ namespace OMAF.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();

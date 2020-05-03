@@ -30,7 +30,7 @@ namespace OMAF
         {
             services.AddControllersWithViews();
             services.AddDbContext<OmafContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("OmafContext2")));
+                options.UseSqlServer(Configuration.GetConnectionString("OmafContext3")));
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 6;

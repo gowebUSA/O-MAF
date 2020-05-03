@@ -11,7 +11,6 @@ using OMAF.Models;
 
 namespace OMAF.Controllers
 {
-    //[Authorize]
     public class AircraftController : Controller
     {
         private readonly OmafContext _context;
@@ -55,7 +54,7 @@ namespace OMAF.Controllers
 
             return View(aircraftBunoVM);
         }
-        
+
 
         // GET: Aircraft/Details/5
         [HttpGet]
@@ -102,7 +101,7 @@ namespace OMAF.Controllers
         }
         // GET: Aircraft/Edit/5
         [HttpGet]
-        public async Task<IActionResult> Edit(int? id)     //Task<IActionResult>
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -121,7 +120,7 @@ namespace OMAF.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id, MCN, Buno, SysReason, JobStat, InitiateDate, UDP, Initiator, Discrepancy, IwDate, Worker, CorrAction, Inspector, ComplDate, MxCtrl, MxCtrlNotes")] Aircraft aircraft)
         {
             if (id != aircraft.Id)
@@ -173,7 +172,7 @@ namespace OMAF.Controllers
 
         // POST: Aircraft/Delete/5
         [HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var aircraft = await _context.Aircraft.FindAsync(id);
