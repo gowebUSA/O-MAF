@@ -353,3 +353,4 @@ C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\OMAF.csproj.CoreC
 C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\OMAF.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NotFound.cshtml.g.cs

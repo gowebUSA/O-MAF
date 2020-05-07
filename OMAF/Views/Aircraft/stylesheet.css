@@ -1,7 +1,19 @@
-tr
-	{mso-height-source:auto;}
-col
-	{mso-width-source:auto;}
+tr {
+	/*mso-height-source: auto;*/
+	border:0; 
+	padding:0; 
+	border-collapse:collapse;
+	table-layout:fixed;
+	width:48pt
+}
+col {
+	/*mso-width-source: auto;*/
+	border: 0;
+	padding: 0;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 48pt
+}
 br
 	{mso-data-placement:same-cell;}
 .style62
