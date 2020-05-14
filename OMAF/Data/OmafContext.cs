@@ -19,6 +19,7 @@ namespace OMAF.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            //modelBuilder.SeedId();            //kudvenkat SeedId.
         }
     }
 }

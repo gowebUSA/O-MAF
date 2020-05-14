@@ -1,9 +1,25 @@
-tr
-	{mso-height-source:auto;}
-col
-	{mso-width-source:auto;}
+tr {
+	/*mso-height-source:auto;*/
+	border: 0;
+	padding: 0;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 48pt
+}
+col { 
+	/*mso-width-source: auto;*/
+	border: 0;
+	padding: 0;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 48pt
+}
 br
-	{mso-data-placement:same-cell;}
+	{
+	/*mso-data-placement:same-cell;*/
+	grid-row: 1;
+
+}
 .style62
 	{color:#0563C1;
 	font-size:10.0pt;
@@ -70,28 +86,36 @@ a:visited
 	border:none;
 	mso-protection:locked visible;
 	mso-style-name:"Normal 2";}
-td
-	{mso-style-parent:style0;
-	padding-top:1px;
-	padding-right:1px;
-	padding-left:1px;
-	mso-ignore:padding;
-	color:windowtext;
-	font-size:10.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Arial, sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	border:none;
-	mso-background-source:auto;
-	mso-pattern:auto;
+td {
+	mso-style-parent: style0;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	mso-ignore: padding;
+	color: windowtext;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	mso-font-charset: 0;
+	mso-number-format: General;
+	/*text-align: general;*/
+	vertical-align: bottom;
+	border: none;
+	mso-background-source: auto;
+	/*mso-pattern:auto;*/
+	/**/
+	text-align: left;
+	vertical-align: bottom;
+	font-family: arial;
+	font-size: 10pt;
+	color: black; 
+	/**/
 	mso-protection:locked visible;
-	white-space:nowrap;
-	mso-rotate:0;}
+	white-space: nowrap;
+	mso-rotate: 0;
+}
 .xl66
 	{mso-style-parent:style0;
 	border-top:none;

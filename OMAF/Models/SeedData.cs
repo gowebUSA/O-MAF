@@ -157,7 +157,7 @@ namespace OMAF.Models
                         //MxCtrl = "rgo111",
                         //MxCtrlNotes = "GT Eng dry",
                     }
-                );
+                );                                  //context.Aircraft.AddRange(
                 context.SaveChanges();
             }
         }

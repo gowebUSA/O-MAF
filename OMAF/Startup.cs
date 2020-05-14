@@ -76,6 +76,7 @@ namespace OMAF
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
             //IdentitySeedData.EnsurePopulated(app);
+            //This is using Models/IdentitySeedData
         }
     }
 }

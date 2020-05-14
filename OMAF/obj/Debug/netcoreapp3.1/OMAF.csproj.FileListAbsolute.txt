@@ -349,8 +349,10 @@ C:\Users\goric\source\repos\O-MAF\OMAF\bin\Debug\netcoreapp3.1\Microsoft.AspNetC
 C:\Users\goric\source\repos\O-MAF\OMAF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\goric\source\repos\O-MAF\OMAF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\goric\source\repos\O-MAF\OMAF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\OMAF.csproj.CoreCompileInputs.cache
-C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\OMAF.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NotFound.cshtml.g.cs
+C:\Users\goric\source\repos\O-MAF\OMAF\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\goric\source\repos\O-MAF\OMAF\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\OMAF.csproj.CoreCompileInputs.cache
+C:\Users\goric\source\repos\O-MAF\OMAF\obj\Debug\netcoreapp3.1\OMAF.MvcApplicationPartsAssemblyInfo.cache
