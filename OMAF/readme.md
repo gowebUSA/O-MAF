@@ -2,6 +2,7 @@
 
 ### Implemented the following technology:
 
+1. GitHuba as the main project management tool.
 1. MVC **Movie App** from Microsoft docs as the template.
 1. **Visual Studio** for implementing ASP.NET MVC framework.
 1. **Microsoft SQL Server Studio** to create database and db schema.
