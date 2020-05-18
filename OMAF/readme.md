@@ -9,6 +9,7 @@
 1. https://app.sqldbm.com/SQLServer/Draft/ for creating **Entity Relationship Design**.
 1. **Pencil Project** by Evolus to create my wireframe design.
 1. **IdentityDbContext** for user's login.
+1. **Microsoft Excel** to build the Details page form.
 1. **MSunit** Test to validate:
    * Aircraft object
    * User object
