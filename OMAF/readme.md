@@ -2,7 +2,7 @@
 
 ### Implemented the following technology:
 
-1. MVC **Movie App** from Microsoft as the template.
+1. MVC **Movie App** from Microsoft docs as the template.
 1. **Visual Studio** for implementing ASP.NET MVC framework.
 1. **Microsoft SQL Server Studio** to create database and db schema.
 1. Microsoft.**EntityFramework**.SqlServer version 3.1.1
